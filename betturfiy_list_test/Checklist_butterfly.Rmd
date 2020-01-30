@@ -1,0 +1,62 @@
+---
+title: "蝶類名錄"
+author: "JokerK"
+date: "2019/12/7"
+output: word_document
+---
+
+```{r,echo=FALSE,results='hide',message=FALSE}
+require(data.table)
+path <- "C:/Users/user/Desktop/betturfiy_list_test/"
+#### creat the basic table of the survey result
+namelist <- fread(paste0(path,"database/butterflylistinTW_2014.csv"),encoding = "UTF-8")
+surv_list <- fread(paste0(path,"Survey_list/sp_list.csv"),header = FALSE)
+namelist[,order:=seq(1:nrow(namelist))]
+miss_value <- NULL
+bs_list <- NULL
+for (i in c(1:nrow(surv_list))){
+    name <- surv_list[i]
+    nr_1 <- namelist[CN_1==name]
+    nr_2 <- namelist[CN_2==name]
+    nr <- rbind(nr_1,nr_2)
+        if (nrow(nr)==0){
+          miss_value <- rbind(miss_value,name)      
+          }else{
+          bs_list <- rbind(bs_list,nr[1])  
+          }
+    }
+tb <- unique(bs_list[order(order)])
+tb[,cbname:=paste0("*",Sci_name_simp,"*"," ",author," ",CN_2," ",CN_1)]
+######## set up the parameters for the text
+fam_number <- length(unique(tb[,family]))
+genus_number <- length(unique(tb[,Genus]))
+sp_number <- nrow(tb)
+endemic_number <- nrow(tb[SP=="特有種",])
+######## creat the checklist
+list <- NULL
+fam_oName <- 0
+j=1
+for (i in c(1:nrow(tb))){
+  fam_name <- tb[i,family]
+  sci_name <- tb[i,cbname]
+  if(tb[i,SP]=="特有種"){sci_name <- paste(sci_name,"@")}
+      if(fam_oName==fam_name){
+        list <- paste0(list,"\n","\t",i,". ",sci_name)
+      }else{
+        fam_oName <- fam_name
+        list <- paste0(list,"\n",j,". ",fam_name,"")
+        list <- paste0(list,"\n","\t",i,". ",sci_name)
+        j=j+1
+        }
+    }
+write.csv(miss_value,paste0(path,"/result/missing_value.csv"))
+write.csv(tb,paste0(path,"/result/checklist_table.csv"))
+```
+
+本研究共調查到`r fam_number`科`r genus_number`屬`r sp_number`種。其中，特有種為`r endemic_number`種。  
+中文名依序分別是臺灣常用中文名，中國常用中文名  
+名錄後標示\@為特有種
+
+```{r,echo=FALSE,results='asis',message=FALSE}
+cat(list)
+```

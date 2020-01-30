@@ -1,0 +1,60 @@
+---
+title: "Butterfly_list_test"
+author: "JokerK"
+date: "2019/12/7"
+output:
+  word_document: default
+  pdf_document: default
+  html_document:
+    df_print: paged
+header-includes:
+ - \usepackage[no-math]{fontspec}
+ - \usepackage{xeCJK}
+ - \setCJKmainfont{微軟正黑體}  ## 可改成已安裝的其他字型
+ - \XeTeXlinebreaklocale "zh"  
+ - \XeTeXlinebreakskip = 0pt plus 1pt
+---
+```{r, echo=FALSE,message=FALSE}
+knitr::opts_chunk$set(fig.showtext=TRUE)
+require(showtext)
+showtext_auto()
+require(data.table)
+path <- "C:/Users/user/Desktop/betturfiy_list_test/"
+namelist <- fread(paste0(path,"database/butterflylistinTW_2014.csv"),encoding = "UTF-8")
+surv_list <- fread(paste0(path,"Survey_list/sp_list.csv"),header = FALSE)
+namelist[,order:=seq(1:nrow(namelist))]
+miss_value <- NULL
+bs_list <- NULL
+for (i in c(1:nrow(surv_list))){
+    name <- surv_list[i]
+    nr_1 <- namelist[CN_1==name]
+    nr_2 <- namelist[CN_2==name]
+    nr <- rbind(nr_1,nr_2)
+        if (nrow(nr)==0){
+          miss_value <- rbind(miss_value,name)      
+          }else{
+          bs_list <- rbind(bs_list,nr[1])  
+          }
+    }
+tb <- unique(bs_list[order(order)])
+tb[,cbname:=paste0("*",Sci_name_simp,"*"," ",author," ",CN_1," ",CN_2)]
+list <- NULL
+fam_oName <- 0
+j=1
+for (i in c(1:nrow(tb))){
+  fam_name <- tb[i,family]
+  sci_name <- tb[i,cbname]
+      if(fam_oName==fam_name){
+        list <- paste0(list,"  \n","\t",i,". ",sci_name)
+      }else{
+        fam_oName <- fam_name
+        list <- paste0(list,"  \n",j,". ",fam_name,"")
+        list <- paste0(list,"  \n","\t",i,". ",sci_name)
+        j=j+1
+        }
+    }
+
+```
+`r list`
+
+knitr::knit(
