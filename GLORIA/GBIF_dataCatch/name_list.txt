@@ -1,0 +1,75 @@
+ScientificName
+Dendrolycopodium juniperoideum
+Diphasiastrum multispicatum
+Diphasiastrum veitchii
+Diphasiastrum yueshanense
+Lycopodium clavatum
+Athyrium reflexipinnum
+Dryopteris alpestris
+Dryopteris expansa
+Selliguea quasidivaricata
+Juniperus formosana formosana
+Juniperus squamata
+Pinus armandii mastersiana
+Pinus taiwanensis
+Hydrocotyle setulosa
+Anaphalis morrisonicola
+Anaphalis nepalensis
+Artemisia kawakamii
+Cirsium arisanense
+Cirsium kawakamii
+Gnaphalium involucratum simplex
+Hieracium morii
+Picris hieracioides
+Solidago virgaurea leiocarpa
+Berberis kawakamii
+Berberis morrisonensis
+Scabiosa lacerifolia
+Dianthus pygmaeus
+Carex breviculmis
+Carex chrysolepis
+Carex orthostemon
+Carex oxyandra
+Carex perakensis
+Carex tristachya pocilliformis
+Trichophorum subcapitatum
+Gaultheria itoana
+Pieris taiwanensis
+Rhododendron pseudochrysanthum
+Rhododendron rubropilosum rubropilosum
+Gentiana arisanensis
+Gentiana davidii formosana
+Gentiana scabrida
+Gentiana scabrida punctulata
+Swertia macrosperma
+Hypericum nagasawae
+Luzula taiwaniana
+Origanum vulgare
+Amitostigma alpestre
+Platanthera brevicalcarata
+Boschniakia himalaica
+Euphrasia transmorrisonensis
+Veronica morrisonicola
+Agrostis infirma infirma
+Brachypodium kawakamii
+Deschampsia flexuosa
+Deyeuxia suizanensis
+Elymus formosanus
+Festuca ovina
+Festuca rubra
+Helictotrichon abietetorum
+Miscanthus sinensis
+Phleum alpinum
+Trisetum spicatum formosanum
+Yushania niitakayamensis
+Polygala japonica
+Potentilla leuconota
+Potentilla tugitakensis
+Rosa transmorrisonensis
+Rubus rolfei
+Spiraea formosana
+Spiraea hayatana
+Spiraea morrisonicola
+Salix taiwanalpina takasagoalpina
+Viola adenothrix adenothrix
+
