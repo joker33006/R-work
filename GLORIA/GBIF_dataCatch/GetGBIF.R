@@ -1,8 +1,8 @@
 library(rgbif)
 library(data.table)
 library(raster)
-setwd("E:/忍者/R-work/GLORIA/GBIF_dataCatch")
-svpath <- "E:/忍者/R-work/GLORIA/GBIF_dataCatch"
+setwd("E:/忍者/R-work/Git/R-work/GLORIA/GBIF_dataCatch")
+svpath <- "E:/忍者/R-work/Git/R-work/GLORIA/GBIF_dataCatch"
 path <- 'E:/Climdata/Chelsa_current_2019'
 clim_d_n <- list.files(path)
 nlist <-read.csv("name_list.txt")
@@ -25,4 +25,5 @@ for (j in 67:length(nlist[,1])){
 write.csv(result,paste0(svpath,"/prim_result/",name,".csv"))
 cat(j)
 }
-#deal with the 
+#deal with the primary data
+
