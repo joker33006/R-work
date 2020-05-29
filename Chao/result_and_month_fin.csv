@@ -1,0 +1,854 @@
+,name,mon,temp
+1,Heloniopsis kawanoi,4,218
+2,Heloniopsis kawanoi,4,223
+3,Heloniopsis kawanoi,4,203
+4,Heloniopsis kawanoi,4,193
+5,Heloniopsis kawanoi,5,242
+6,Heloniopsis kawanoi,5,246
+7,Heloniopsis kawanoi,5,229
+8,Heloniopsis kawanoi,5,220
+9,Heloniopsis koreana,3,31
+10,Heloniopsis koreana,4,89
+11,Heloniopsis koreana,4,97
+12,Heloniopsis koreana,4,97
+13,Heloniopsis koreana,4,112
+14,Heloniopsis koreana,4,97
+15,Heloniopsis koreana,5,100
+16,Heloniopsis koreana,5,105
+17,Heloniopsis koreana,5,165
+18,Heloniopsis koreana,5,169
+19,Heloniopsis koreana,5,108
+20,Heloniopsis koreana,5,114
+21,Heloniopsis koreana,5,155
+22,Heloniopsis koreana,5,130
+23,Heloniopsis koreana,4,117
+24,Heloniopsis koreana,4,75
+25,Heloniopsis koreana,4,100
+26,Heloniopsis koreana,5,173
+27,Heloniopsis koreana,4,106
+28,Heloniopsis koreana,4,100
+29,Heloniopsis koreana,4,116
+30,Heloniopsis koreana,4,116
+31,Heloniopsis koreana,5,173
+32,Heloniopsis koreana,5,173
+33,Heloniopsis koreana,5,101
+34,Heloniopsis koreana,5,152
+35,Heloniopsis koreana,5,158
+36,Heloniopsis koreana,5,152
+37,Heloniopsis koreana,5,152
+38,Heloniopsis koreana,5,152
+39,Heloniopsis koreana,5,152
+40,Heloniopsis koreana,5,146
+41,Heloniopsis leucantha,1,177
+42,Heloniopsis leucantha,1,181
+43,Heloniopsis leucantha,1,162
+44,Heloniopsis leucantha,1,150
+45,Heloniopsis leucantha,2,181
+46,Heloniopsis leucantha,2,185
+47,Heloniopsis leucantha,2,164
+48,Heloniopsis leucantha,2,152
+49,Heloniopsis orientalis var. breviscapa,4,103
+50,Heloniopsis orientalis var. breviscapa,5,137
+51,Heloniopsis orientalis var. breviscapa,5,165
+52,Heloniopsis orientalis var. breviscapa,6,183
+53,Heloniopsis orientalis var. breviscapa,6,183
+54,Heloniopsis orientalis var. breviscapa,3,93
+55,Heloniopsis orientalis var. breviscapa,3,105
+56,Heloniopsis orientalis var. breviscapa,4,122
+57,Heloniopsis orientalis var. breviscapa,5,155
+58,Heloniopsis orientalis var. breviscapa,5,161
+59,Heloniopsis orientalis var. breviscapa,4,103
+60,Heloniopsis orientalis var. breviscapa,5,137
+61,Heloniopsis orientalis var. breviscapa,3,81
+62,Heloniopsis orientalis var. breviscapa,5,165
+63,Heloniopsis orientalis var. breviscapa,6,183
+64,Heloniopsis orientalis var. breviscapa,6,183
+65,Heloniopsis orientalis var. breviscapa,9,203
+66,Heloniopsis orientalis var. breviscapa,3,93
+67,Heloniopsis orientalis var. breviscapa,3,105
+68,Heloniopsis orientalis var. breviscapa,4,169
+69,Heloniopsis orientalis var. breviscapa,4,122
+70,Heloniopsis orientalis var. breviscapa,6,196
+71,Heloniopsis orientalis var. breviscapa,3,85
+72,Heloniopsis orientalis var. breviscapa,4,138
+73,Heloniopsis orientalis var. breviscapa,4,150
+74,Heloniopsis orientalis var. breviscapa,4,138
+75,Heloniopsis orientalis var. breviscapa,5,155
+76,Heloniopsis orientalis var. breviscapa,7,264
+77,Heloniopsis orientalis var. breviscapa,4,152
+78,Heloniopsis orientalis var. breviscapa,3,98
+79,Heloniopsis orientalis var. breviscapa,5,179
+80,Heloniopsis orientalis var. breviscapa,5,179
+81,Heloniopsis orientalis var. breviscapa,5,184
+82,Heloniopsis orientalis var. breviscapa,3,80
+83,Heloniopsis orientalis var. breviscapa,3,104
+84,Heloniopsis orientalis var. breviscapa,4,149
+85,Heloniopsis orientalis var. breviscapa,5,161
+86,Heloniopsis orientalis var. breviscapa,3,91
+87,Heloniopsis orientalis var. breviscapa,3,84
+88,Heloniopsis orientalis var. breviscapa,3,107
+89,Heloniopsis orientalis var. breviscapa,3,87
+90,Heloniopsis orientalis var. breviscapa,4,146
+91,Heloniopsis orientalis var. breviscapa,4,151
+92,Heloniopsis orientalis var. breviscapa,4,140
+93,Heloniopsis orientalis var. breviscapa,3,99
+94,Heloniopsis orientalis var. breviscapa,5,159
+95,Heloniopsis orientalis var. breviscapa,5,159
+96,Heloniopsis orientalis var. breviscapa,3,87
+97,Heloniopsis orientalis var. breviscapa,3,87
+98,Heloniopsis orientalis var. breviscapa,3,87
+99,Heloniopsis orientalis var. breviscapa,4,132
+100,Heloniopsis orientalis var. breviscapa,4,132
+101,Heloniopsis orientalis var. breviscapa,8,213
+102,Heloniopsis orientalis var. breviscapa,3,84
+103,Heloniopsis orientalis var. breviscapa,5,167
+104,Heloniopsis orientalis var. breviscapa,5,167
+105,Heloniopsis orientalis var. breviscapa,5,172
+106,Heloniopsis orientalis var. breviscapa,4,132
+107,Heloniopsis orientalis var. breviscapa,4,127
+108,Heloniopsis orientalis var. breviscapa,4,127
+109,Heloniopsis orientalis var. breviscapa,4,132
+110,Heloniopsis orientalis var. breviscapa,4,132
+111,Heloniopsis orientalis var. breviscapa,4,135
+112,Heloniopsis orientalis var. breviscapa,6,149
+113,Heloniopsis orientalis var. breviscapa,3,86
+114,Heloniopsis orientalis var. breviscapa,4,135
+115,Heloniopsis orientalis var. breviscapa,4,141
+116,Heloniopsis orientalis var. breviscapa,4,164
+117,Heloniopsis orientalis var. breviscapa,4,164
+118,Heloniopsis orientalis var. breviscapa,4,172
+119,Heloniopsis orientalis var. breviscapa,4,172
+120,Heloniopsis orientalis var. breviscapa,5,188
+121,Heloniopsis orientalis var. breviscapa,3,75
+122,Heloniopsis orientalis var. breviscapa,4,141
+123,Heloniopsis orientalis var. breviscapa,5,172
+124,Heloniopsis orientalis var. breviscapa,4,132
+125,Heloniopsis orientalis var. breviscapa,4,132
+126,Heloniopsis orientalis var. breviscapa,4,132
+127,Heloniopsis orientalis var. breviscapa,5,172
+128,Heloniopsis orientalis var. breviscapa,5,172
+129,Heloniopsis orientalis var. breviscapa,5,172
+130,Heloniopsis orientalis var. breviscapa,4,141
+131,Heloniopsis orientalis var. breviscapa,6,171
+132,Heloniopsis orientalis var. breviscapa,4,104
+133,Heloniopsis orientalis var. breviscapa,4,132
+134,Heloniopsis orientalis var. flavida,4,110
+135,Heloniopsis orientalis var. flavida,3,87
+136,Heloniopsis orientalis var. flavida,12,41
+137,Heloniopsis orientalis var. flavida,4,121
+138,Heloniopsis orientalis var. flavida,4,131
+139,Heloniopsis orientalis var. flavida,5,130
+140,Heloniopsis orientalis var. flavida,3,76
+141,Heloniopsis orientalis var. flavida,3,75
+142,Heloniopsis orientalis var. flavida,4,123
+143,Heloniopsis orientalis var. flavida,4,122
+144,Heloniopsis orientalis var. flavida,4,123
+145,Heloniopsis orientalis var. flavida,3,80
+146,Heloniopsis orientalis var. flavida,3,73
+147,Heloniopsis orientalis var. flavida,4,132
+148,Heloniopsis orientalis var. flavida,4,116
+149,Heloniopsis orientalis var. flavida,4,128
+150,Heloniopsis orientalis var. flavida,4,137
+151,Heloniopsis orientalis var. flavida,4,136
+152,Heloniopsis orientalis var. flavida,4,116
+153,Heloniopsis orientalis var. flavida,10,118
+154,Heloniopsis orientalis var. flavida,3,89
+155,Heloniopsis orientalis var. flavida,3,85
+156,Heloniopsis orientalis var. flavida,3,74
+157,Heloniopsis orientalis var. flavida,4,147
+158,Heloniopsis orientalis var. flavida,5,155
+159,Heloniopsis orientalis var. flavida,4,103
+160,Heloniopsis orientalis var. flavida,4,91
+161,Heloniopsis orientalis var. flavida,5,179
+162,Heloniopsis orientalis var. flavida,3,86
+163,Heloniopsis orientalis var. flavida,4,134
+164,Heloniopsis orientalis var. flavida,10,153
+165,Heloniopsis orientalis var. flavida,4,103
+166,Heloniopsis orientalis var. flavida,4,103
+167,Heloniopsis orientalis var. flavida,5,137
+168,Heloniopsis orientalis var. flavida,6,232
+169,Heloniopsis orientalis var. flavida,6,181
+170,Heloniopsis orientalis var. flavida,6,196
+171,Heloniopsis orientalis var. flavida,4,125
+172,Heloniopsis orientalis var. flavida,4,148
+173,Heloniopsis orientalis var. flavida,4,104
+174,Heloniopsis orientalis var. flavida,5,170
+175,Heloniopsis orientalis var. flavida,3,82
+176,Heloniopsis orientalis var. flavida,4,147
+177,Heloniopsis orientalis var. flavida,4,148
+178,Heloniopsis orientalis var. flavida,4,125
+179,Heloniopsis orientalis var. flavida,4,112
+180,Heloniopsis orientalis var. flavida,4,138
+181,Heloniopsis orientalis var. flavida,5,178
+182,Heloniopsis orientalis var. flavida,5,167
+183,Heloniopsis orientalis var. flavida,5,153
+184,Heloniopsis orientalis var. flavida,5,184
+185,Heloniopsis orientalis var. flavida,5,192
+186,Heloniopsis orientalis var. flavida,6,195
+187,Heloniopsis orientalis var. flavida,6,194
+188,Heloniopsis orientalis var. flavida,3,75
+189,Heloniopsis orientalis var. flavida,4,148
+190,Heloniopsis orientalis var. flavida,5,187
+191,Heloniopsis orientalis var. flavida,5,151
+192,Heloniopsis orientalis var. flavida,5,151
+193,Heloniopsis orientalis var. flavida,5,168
+194,Heloniopsis orientalis var. flavida,5,161
+195,Heloniopsis orientalis var. flavida,8,220
+196,Heloniopsis orientalis var. flavida,10,141
+197,Heloniopsis orientalis var. flavida,3,94
+198,Heloniopsis orientalis var. flavida,3,96
+199,Heloniopsis orientalis var. flavida,5,164
+200,Heloniopsis orientalis var. flavida,4,148
+201,Heloniopsis orientalis var. flavida,4,124
+202,Heloniopsis orientalis var. flavida,4,109
+203,Heloniopsis orientalis var. flavida,5,182
+204,Heloniopsis orientalis var. flavida,6,171
+205,Heloniopsis orientalis var. flavida,4,133
+206,Heloniopsis orientalis var. flavida,4,126
+207,Heloniopsis orientalis var. flavida,4,126
+208,Heloniopsis orientalis var. flavida,3,85
+209,Heloniopsis orientalis var. flavida,4,108
+210,Heloniopsis orientalis var. flavida,5,115
+211,Heloniopsis orientalis var. flavida,7,208
+212,Heloniopsis orientalis var. flavida,4,106
+213,Heloniopsis orientalis var. flavida,4,128
+214,Heloniopsis orientalis var. flavida,4,160
+215,Heloniopsis orientalis var. flavida,6,152
+216,Heloniopsis orientalis var. flavida,4,89
+217,Heloniopsis orientalis var. flavida,7,271
+218,Heloniopsis orientalis var. flavida,3,56
+219,Heloniopsis orientalis var. flavida,3,113
+220,Heloniopsis orientalis var. flavida,4,128
+221,Heloniopsis orientalis var. flavida,4,128
+222,Heloniopsis orientalis var. flavida,4,128
+223,Heloniopsis orientalis var. flavida,4,77
+224,Heloniopsis orientalis var. flavida,3,56
+225,Heloniopsis orientalis var. flavida,4,121
+226,Heloniopsis orientalis var. flavida,4,128
+227,Heloniopsis orientalis var. flavida,4,123
+228,Heloniopsis orientalis var. flavida,4,105
+229,Heloniopsis orientalis var. flavida,4,105
+230,Heloniopsis orientalis var. flavida,4,160
+231,Heloniopsis orientalis var. flavida,5,120
+232,Heloniopsis orientalis var. flavida,3,81
+233,Heloniopsis orientalis var. flavida,8,283
+234,Heloniopsis orientalis var. flavida,3,111
+235,Heloniopsis orientalis var. flavida,4,138
+236,Heloniopsis orientalis var. flavida,4,123
+237,Heloniopsis orientalis var. flavida,5,200
+238,Heloniopsis orientalis var. flavida,5,200
+239,Heloniopsis orientalis var. flavida,8,283
+240,Heloniopsis orientalis var. flavida,8,284
+241,Heloniopsis orientalis var. flavida,4,117
+242,Heloniopsis orientalis var. flavida,8,281
+243,Heloniopsis orientalis var. flavida,11,151
+244,Heloniopsis orientalis var. flavida,3,102
+245,Heloniopsis orientalis var. flavida,3,102
+246,Heloniopsis orientalis var. flavida,5,200
+247,Heloniopsis orientalis var. flavida,7,244
+248,Heloniopsis orientalis var. flavida,7,244
+249,Heloniopsis orientalis var. flavida,3,41
+250,Heloniopsis orientalis var. flavida,3,41
+251,Heloniopsis orientalis var. flavida,3,88
+252,Heloniopsis orientalis var. flavida,7,271
+253,Heloniopsis orientalis var. flavida,5,172
+254,Heloniopsis orientalis var. flavida,4,152
+255,Heloniopsis orientalis var. flavida,3,102
+256,Heloniopsis orientalis var. flavida,4,85
+257,Heloniopsis orientalis var. flavida,4,160
+258,Heloniopsis orientalis var. flavida,3,90
+259,Heloniopsis orientalis var. flavida,3,98
+260,Heloniopsis orientalis var. flavida,4,155
+261,Heloniopsis orientalis var. flavida,4,155
+262,Heloniopsis orientalis var. flavida,4,155
+263,Heloniopsis orientalis var. flavida,3,102
+264,Heloniopsis orientalis var. flavida,3,83
+265,Heloniopsis orientalis var. flavida,4,157
+266,Heloniopsis orientalis var. flavida,4,157
+267,Heloniopsis orientalis var. flavida,4,150
+268,Heloniopsis orientalis var. flavida,4,150
+269,Heloniopsis orientalis var. flavida,4,150
+270,Heloniopsis orientalis var. flavida,11,138
+271,Heloniopsis orientalis var. flavida,4,135
+272,Heloniopsis orientalis var. flavida,5,196
+273,Heloniopsis orientalis var. flavida,10,196
+274,Heloniopsis orientalis var. flavida,8,235
+275,Heloniopsis orientalis var. flavida,3,56
+276,Heloniopsis orientalis var. flavida,3,88
+277,Heloniopsis orientalis var. flavida,5,110
+278,Heloniopsis orientalis var. orientalis,5,161
+279,Heloniopsis orientalis var. orientalis,4,143
+280,Heloniopsis orientalis var. orientalis,4,142
+281,Heloniopsis orientalis var. orientalis,7,158
+282,Heloniopsis orientalis var. orientalis,7,190
+283,Heloniopsis orientalis var. orientalis,2,68
+284,Heloniopsis orientalis var. orientalis,2,80
+285,Heloniopsis orientalis var. orientalis,4,82
+286,Heloniopsis orientalis var. orientalis,5,133
+287,Heloniopsis orientalis var. orientalis,5,130
+288,Heloniopsis orientalis var. orientalis,6,153
+289,Heloniopsis orientalis var. orientalis,4,106
+290,Heloniopsis orientalis var. orientalis,4,125
+291,Heloniopsis orientalis var. orientalis,4,74
+292,Heloniopsis orientalis var. orientalis,4,114
+293,Heloniopsis orientalis var. orientalis,4,144
+294,Heloniopsis orientalis var. orientalis,4,138
+295,Heloniopsis orientalis var. orientalis,4,131
+296,Heloniopsis orientalis var. orientalis,5,136
+297,Heloniopsis orientalis var. orientalis,6,175
+298,Heloniopsis orientalis var. orientalis,4,142
+299,Heloniopsis orientalis var. orientalis,5,142
+300,Heloniopsis orientalis var. orientalis,4,143
+301,Heloniopsis orientalis var. orientalis,5,171
+302,Heloniopsis orientalis var. orientalis,5,140
+303,Heloniopsis orientalis var. orientalis,6,195
+304,Heloniopsis orientalis var. orientalis,5,165
+305,Heloniopsis orientalis var. orientalis,6,197
+306,Heloniopsis orientalis var. orientalis,4,120
+307,Heloniopsis orientalis var. orientalis,5,151
+308,Heloniopsis orientalis var. orientalis,5,154
+309,Heloniopsis orientalis var. orientalis,6,165
+310,Heloniopsis orientalis var. orientalis,4,110
+311,Heloniopsis orientalis var. orientalis,4,124
+312,Heloniopsis orientalis var. orientalis,4,137
+313,Heloniopsis orientalis var. orientalis,5,173
+314,Heloniopsis orientalis var. orientalis,5,181
+315,Heloniopsis orientalis var. orientalis,5,170
+316,Heloniopsis orientalis var. orientalis,5,182
+317,Heloniopsis orientalis var. orientalis,6,226
+318,Heloniopsis orientalis var. orientalis,4,123
+319,Heloniopsis orientalis var. orientalis,4,136
+320,Heloniopsis orientalis var. orientalis,4,127
+321,Heloniopsis orientalis var. orientalis,4,131
+322,Heloniopsis orientalis var. orientalis,4,128
+323,Heloniopsis orientalis var. orientalis,5,181
+324,Heloniopsis orientalis var. orientalis,4,138
+325,Heloniopsis orientalis var. orientalis,5,164
+326,Heloniopsis orientalis var. orientalis,5,180
+327,Heloniopsis orientalis var. orientalis,5,142
+328,Heloniopsis orientalis var. orientalis,6,183
+329,Heloniopsis orientalis var. orientalis,7,246
+330,Heloniopsis orientalis var. orientalis,4,143
+331,Heloniopsis orientalis var. orientalis,4,139
+332,Heloniopsis orientalis var. orientalis,5,184
+333,Heloniopsis orientalis var. orientalis,5,176
+334,Heloniopsis orientalis var. orientalis,5,171
+335,Heloniopsis orientalis var. orientalis,5,157
+336,Heloniopsis orientalis var. orientalis,6,223
+337,Heloniopsis orientalis var. orientalis,6,154
+338,Heloniopsis orientalis var. orientalis,2,35
+339,Heloniopsis orientalis var. orientalis,4,116
+340,Heloniopsis orientalis var. orientalis,6,208
+341,Heloniopsis orientalis var. orientalis,5,164
+342,Heloniopsis orientalis var. orientalis,6,175
+343,Heloniopsis orientalis var. orientalis,4,142
+344,Heloniopsis orientalis var. orientalis,4,98
+345,Heloniopsis orientalis var. orientalis,4,98
+346,Heloniopsis orientalis var. orientalis,4,119
+347,Heloniopsis orientalis var. orientalis,6,221
+348,Heloniopsis orientalis var. orientalis,4,146
+349,Heloniopsis orientalis var. orientalis,4,146
+350,Heloniopsis orientalis var. orientalis,4,130
+351,Heloniopsis orientalis var. orientalis,6,135
+352,Heloniopsis orientalis var. orientalis,7,178
+353,Heloniopsis orientalis var. orientalis,5,134
+354,Heloniopsis orientalis var. orientalis,5,170
+355,Heloniopsis orientalis var. orientalis,5,170
+356,Heloniopsis orientalis var. orientalis,5,170
+357,Heloniopsis orientalis var. orientalis,6,202
+358,Heloniopsis orientalis var. orientalis,5,182
+359,Heloniopsis orientalis var. orientalis,5,141
+360,Heloniopsis orientalis var. orientalis,3,40
+361,Heloniopsis orientalis var. orientalis,6,170
+362,Heloniopsis orientalis var. orientalis,5,143
+363,Heloniopsis orientalis var. orientalis,5,128
+364,Heloniopsis orientalis var. orientalis,5,128
+365,Heloniopsis orientalis var. orientalis,6,170
+366,Heloniopsis orientalis var. orientalis,8,223
+367,Heloniopsis orientalis var. orientalis,3,40
+368,Heloniopsis orientalis var. orientalis,3,40
+369,Heloniopsis orientalis var. orientalis,4,134
+370,Heloniopsis orientalis var. orientalis,7,225
+371,Heloniopsis orientalis var. orientalis,5,97
+372,Heloniopsis orientalis var. orientalis,5,157
+373,Heloniopsis orientalis var. orientalis,5,157
+374,Heloniopsis orientalis var. orientalis,5,189
+375,Heloniopsis orientalis var. orientalis,8,180
+376,Heloniopsis orientalis var. orientalis,8,120
+377,Heloniopsis orientalis var. orientalis,5,140
+378,Heloniopsis orientalis var. orientalis,8,250
+379,Heloniopsis orientalis var. orientalis,6,186
+380,Heloniopsis orientalis var. orientalis,1,39
+381,Heloniopsis orientalis var. orientalis,5,157
+382,Heloniopsis orientalis var. orientalis,7,85
+383,Heloniopsis orientalis var. orientalis,5,110
+384,Heloniopsis orientalis var. orientalis,6,145
+385,Heloniopsis orientalis var. orientalis,7,173
+386,Heloniopsis orientalis var. orientalis,8,117
+387,Heloniopsis orientalis var. orientalis,7,142
+388,Heloniopsis orientalis var. orientalis,7,142
+389,Heloniopsis orientalis var. orientalis,7,177
+390,Heloniopsis orientalis var. orientalis,7,142
+391,Heloniopsis orientalis var. orientalis,4,56
+392,Heloniopsis orientalis var. orientalis,5,172
+393,Heloniopsis orientalis var. orientalis,7,160
+394,Heloniopsis orientalis var. orientalis,7,160
+395,Heloniopsis orientalis var. orientalis,8,203
+396,Heloniopsis orientalis var. orientalis,4,110
+397,Heloniopsis orientalis var. orientalis,4,110
+398,Heloniopsis orientalis var. orientalis,7,105
+399,Heloniopsis sp.,1,91
+400,Heloniopsis sp.,1,79
+401,Heloniopsis sp.,1,85
+402,Heloniopsis sp.,1,93
+403,Heloniopsis sp.,2,100
+404,Heloniopsis sp.,2,86
+405,Heloniopsis sp.,2,93
+406,Heloniopsis sp.,2,100
+407,Heloniopsis tubiflora,4,59
+408,Heloniopsis tubiflora,4,108
+409,Heloniopsis tubiflora,4,47
+410,Heloniopsis tubiflora,5,109
+411,Heloniopsis tubiflora,5,160
+412,Heloniopsis tubiflora,5,97
+413,Ypsilandra thibetica,3,123
+414,Ypsilandra thibetica,3,121
+415,Ypsilandra thibetica,3,123
+416,Ypsilandra thibetica,3,123
+417,Ypsilandra thibetica,3,122
+418,Ypsilandra thibetica,3,122
+419,Ypsilandra thibetica,3,122
+420,Ypsilandra thibetica,3,137
+421,Ypsilandra thibetica,3,137
+422,Ypsilandra thibetica,3,137
+423,Ypsilandra thibetica,3,137
+424,Ypsilandra thibetica,3,122
+425,Ypsilandra thibetica,3,122
+426,Ypsilandra thibetica,3,122
+427,Ypsilandra thibetica,3,109
+428,Ypsilandra thibetica,3,108
+429,Ypsilandra thibetica,3,108
+430,Ypsilandra thibetica,3,126
+431,Ypsilandra thibetica,3,108
+432,Ypsilandra thibetica,3,108
+433,Ypsilandra thibetica,3,108
+434,Ypsilandra thibetica,3,108
+435,Ypsilandra thibetica,3,117
+436,Ypsilandra thibetica,3,117
+437,Ypsilandra thibetica,3,106
+438,Ypsilandra thibetica,3,122
+439,Ypsilandra thibetica,3,45
+440,Ypsilandra thibetica,3,110
+441,Ypsilandra thibetica,3,106
+442,Ypsilandra thibetica,3,122
+443,Ypsilandra thibetica,3,110
+444,Ypsilandra thibetica,3,106
+445,Ypsilandra thibetica,3,110
+446,Ypsilandra thibetica,3,125
+447,Ypsilandra thibetica,3,114
+448,Ypsilandra thibetica,3,114
+449,Ypsilandra thibetica,3,124
+450,Ypsilandra thibetica,3,100
+451,Ypsilandra thibetica,3,108
+452,Ypsilandra thibetica,3,108
+453,Ypsilandra thibetica,3,108
+454,Ypsilandra thibetica,3,108
+455,Ypsilandra thibetica,3,108
+456,Ypsilandra thibetica,3,117
+457,Ypsilandra thibetica,3,108
+458,Ypsilandra thibetica,3,108
+459,Ypsilandra thibetica,3,108
+460,Ypsilandra thibetica,3,126
+461,Ypsilandra thibetica,3,122
+462,Ypsilandra thibetica,3,147
+463,Ypsilandra thibetica,3,147
+464,Ypsilandra thibetica,3,122
+465,Ypsilandra thibetica,3,122
+466,Ypsilandra thibetica,3,147
+467,Ypsilandra thibetica,3,138
+468,Ypsilandra thibetica,3,124
+469,Ypsilandra thibetica,3,124
+470,Ypsilandra thibetica,3,124
+471,Ypsilandra thibetica,3,124
+472,Ypsilandra thibetica,3,124
+473,Ypsilandra thibetica,3,110
+474,Ypsilandra thibetica,3,67
+475,Ypsilandra thibetica,3,108
+476,Ypsilandra thibetica,3,108
+477,Ypsilandra thibetica,3,108
+478,Ypsilandra thibetica,3,108
+479,Ypsilandra thibetica,3,108
+480,Ypsilandra thibetica,3,-57
+481,Ypsilandra thibetica,3,52
+482,Ypsilandra thibetica,3,141
+483,Ypsilandra thibetica,3,110
+484,Ypsilandra thibetica,3,110
+485,Ypsilandra thibetica,3,110
+486,Ypsilandra thibetica,3,110
+487,Ypsilandra thibetica,3,141
+488,Ypsilandra thibetica,3,110
+489,Ypsilandra thibetica,3,110
+490,Ypsilandra thibetica,3,110
+491,Ypsilandra thibetica,3,110
+492,Ypsilandra thibetica,3,110
+493,Ypsilandra thibetica,3,110
+494,Ypsilandra thibetica,3,110
+495,Ypsilandra thibetica,3,110
+496,Ypsilandra thibetica,3,127
+497,Ypsilandra thibetica,3,127
+498,Ypsilandra thibetica,3,110
+499,Ypsilandra thibetica,3,110
+500,Ypsilandra thibetica,3,150
+501,Ypsilandra thibetica,3,126
+502,Ypsilandra thibetica,3,123
+503,Ypsilandra thibetica,3,125
+504,Ypsilandra thibetica,3,122
+505,Ypsilandra thibetica,3,125
+506,Ypsilandra thibetica,3,122
+507,Ypsilandra thibetica,3,122
+508,Ypsilandra thibetica,3,122
+509,Ypsilandra thibetica,3,122
+510,Ypsilandra thibetica,3,122
+511,Ypsilandra thibetica,3,122
+512,Ypsilandra thibetica,3,122
+513,Ypsilandra thibetica,3,118
+514,Ypsilandra thibetica,3,125
+515,Ypsilandra thibetica,3,122
+516,Ypsilandra thibetica,3,122
+517,Ypsilandra thibetica,3,122
+518,Ypsilandra thibetica,3,126
+519,Ypsilandra thibetica,3,126
+520,Ypsilandra thibetica,3,137
+521,Ypsilandra thibetica,3,110
+522,Ypsilandra thibetica,3,126
+523,Ypsilandra thibetica,3,110
+524,Ypsilandra thibetica,3,110
+525,Ypsilandra thibetica,3,126
+526,Ypsilandra thibetica,3,126
+527,Ypsilandra thibetica,3,126
+528,Ypsilandra thibetica,4,175
+529,Ypsilandra thibetica,4,183
+530,Ypsilandra thibetica,4,173
+531,Ypsilandra thibetica,4,173
+532,Ypsilandra thibetica,4,170
+533,Ypsilandra thibetica,4,170
+534,Ypsilandra thibetica,4,170
+535,Ypsilandra thibetica,4,196
+536,Ypsilandra thibetica,4,196
+537,Ypsilandra thibetica,4,196
+538,Ypsilandra thibetica,4,196
+539,Ypsilandra thibetica,4,170
+540,Ypsilandra thibetica,4,170
+541,Ypsilandra thibetica,4,170
+542,Ypsilandra thibetica,4,154
+543,Ypsilandra thibetica,4,158
+544,Ypsilandra thibetica,4,158
+545,Ypsilandra thibetica,4,176
+546,Ypsilandra thibetica,4,158
+547,Ypsilandra thibetica,4,158
+548,Ypsilandra thibetica,4,158
+549,Ypsilandra thibetica,4,158
+550,Ypsilandra thibetica,4,172
+551,Ypsilandra thibetica,4,172
+552,Ypsilandra thibetica,4,154
+553,Ypsilandra thibetica,4,170
+554,Ypsilandra thibetica,4,86
+555,Ypsilandra thibetica,4,159
+556,Ypsilandra thibetica,4,154
+557,Ypsilandra thibetica,4,170
+558,Ypsilandra thibetica,4,159
+559,Ypsilandra thibetica,4,154
+560,Ypsilandra thibetica,4,159
+561,Ypsilandra thibetica,4,186
+562,Ypsilandra thibetica,4,164
+563,Ypsilandra thibetica,4,164
+564,Ypsilandra thibetica,4,172
+565,Ypsilandra thibetica,4,148
+566,Ypsilandra thibetica,4,158
+567,Ypsilandra thibetica,4,158
+568,Ypsilandra thibetica,4,158
+569,Ypsilandra thibetica,4,158
+570,Ypsilandra thibetica,4,158
+571,Ypsilandra thibetica,4,172
+572,Ypsilandra thibetica,4,158
+573,Ypsilandra thibetica,4,158
+574,Ypsilandra thibetica,4,158
+575,Ypsilandra thibetica,4,187
+576,Ypsilandra thibetica,4,170
+577,Ypsilandra thibetica,4,203
+578,Ypsilandra thibetica,4,203
+579,Ypsilandra thibetica,4,170
+580,Ypsilandra thibetica,4,170
+581,Ypsilandra thibetica,4,203
+582,Ypsilandra thibetica,4,196
+583,Ypsilandra thibetica,4,172
+584,Ypsilandra thibetica,4,172
+585,Ypsilandra thibetica,4,172
+586,Ypsilandra thibetica,4,172
+587,Ypsilandra thibetica,4,172
+588,Ypsilandra thibetica,4,159
+589,Ypsilandra thibetica,4,115
+590,Ypsilandra thibetica,4,158
+591,Ypsilandra thibetica,4,158
+592,Ypsilandra thibetica,4,158
+593,Ypsilandra thibetica,4,158
+594,Ypsilandra thibetica,4,158
+595,Ypsilandra thibetica,4,-16
+596,Ypsilandra thibetica,4,104
+597,Ypsilandra thibetica,4,201
+598,Ypsilandra thibetica,4,159
+599,Ypsilandra thibetica,4,159
+600,Ypsilandra thibetica,4,159
+601,Ypsilandra thibetica,4,159
+602,Ypsilandra thibetica,4,201
+603,Ypsilandra thibetica,4,159
+604,Ypsilandra thibetica,4,159
+605,Ypsilandra thibetica,4,159
+606,Ypsilandra thibetica,4,159
+607,Ypsilandra thibetica,4,159
+608,Ypsilandra thibetica,4,159
+609,Ypsilandra thibetica,4,159
+610,Ypsilandra thibetica,4,159
+611,Ypsilandra thibetica,4,178
+612,Ypsilandra thibetica,4,178
+613,Ypsilandra thibetica,4,159
+614,Ypsilandra thibetica,4,159
+615,Ypsilandra thibetica,4,205
+616,Ypsilandra thibetica,4,176
+617,Ypsilandra thibetica,4,171
+618,Ypsilandra thibetica,4,185
+619,Ypsilandra thibetica,4,170
+620,Ypsilandra thibetica,4,185
+621,Ypsilandra thibetica,4,170
+622,Ypsilandra thibetica,4,170
+623,Ypsilandra thibetica,4,170
+624,Ypsilandra thibetica,4,170
+625,Ypsilandra thibetica,4,170
+626,Ypsilandra thibetica,4,170
+627,Ypsilandra thibetica,4,170
+628,Ypsilandra thibetica,4,166
+629,Ypsilandra thibetica,4,185
+630,Ypsilandra thibetica,4,170
+631,Ypsilandra thibetica,4,170
+632,Ypsilandra thibetica,4,170
+633,Ypsilandra thibetica,4,176
+634,Ypsilandra thibetica,4,176
+635,Ypsilandra thibetica,4,187
+636,Ypsilandra thibetica,4,159
+637,Ypsilandra thibetica,4,176
+638,Ypsilandra thibetica,4,159
+639,Ypsilandra thibetica,4,159
+640,Ypsilandra thibetica,4,176
+641,Ypsilandra thibetica,4,176
+642,Ypsilandra thibetica,4,176
+643,Ypsilandra yunnanensis,6,126
+644,Ypsilandra yunnanensis,6,120
+645,Ypsilandra yunnanensis,6,126
+646,Ypsilandra yunnanensis,6,120
+647,Ypsilandra yunnanensis,6,120
+648,Ypsilandra yunnanensis,6,118
+649,Ypsilandra yunnanensis,6,120
+650,Ypsilandra yunnanensis,6,116
+651,Ypsilandra yunnanensis,6,120
+652,Ypsilandra yunnanensis,6,137
+653,Ypsilandra yunnanensis,6,120
+654,Ypsilandra yunnanensis,6,120
+655,Ypsilandra yunnanensis,6,120
+656,Ypsilandra yunnanensis,6,117
+657,Ypsilandra yunnanensis,6,140
+658,Ypsilandra yunnanensis,6,117
+659,Ypsilandra yunnanensis,6,140
+660,Ypsilandra yunnanensis,6,140
+661,Ypsilandra yunnanensis,6,101
+662,Ypsilandra yunnanensis,6,186
+663,Ypsilandra yunnanensis,6,186
+664,Ypsilandra yunnanensis,6,146
+665,Ypsilandra yunnanensis,6,146
+666,Ypsilandra yunnanensis,6,146
+667,Ypsilandra yunnanensis,6,146
+668,Ypsilandra yunnanensis,6,146
+669,Ypsilandra yunnanensis,6,209
+670,Ypsilandra yunnanensis,6,209
+671,Ypsilandra yunnanensis,6,209
+672,Ypsilandra yunnanensis,6,211
+673,Ypsilandra yunnanensis,6,138
+674,Ypsilandra yunnanensis,6,137
+675,Ypsilandra yunnanensis,6,137
+676,Ypsilandra yunnanensis,6,137
+677,Ypsilandra yunnanensis,6,209
+678,Ypsilandra yunnanensis,6,137
+679,Ypsilandra yunnanensis,6,137
+680,Ypsilandra yunnanensis,6,209
+681,Ypsilandra yunnanensis,6,137
+682,Ypsilandra yunnanensis,6,137
+683,Ypsilandra yunnanensis,6,137
+684,Ypsilandra yunnanensis,6,137
+685,Ypsilandra yunnanensis,6,137
+686,Ypsilandra yunnanensis,6,137
+687,Ypsilandra yunnanensis,6,137
+688,Ypsilandra yunnanensis,6,209
+689,Ypsilandra yunnanensis,6,209
+690,Ypsilandra yunnanensis,6,209
+691,Ypsilandra yunnanensis,6,209
+692,Ypsilandra yunnanensis,6,209
+693,Ypsilandra yunnanensis,6,209
+694,Ypsilandra yunnanensis,6,209
+695,Ypsilandra yunnanensis,6,137
+696,Ypsilandra yunnanensis,6,137
+697,Ypsilandra yunnanensis,6,209
+698,Ypsilandra yunnanensis,6,187
+699,Ypsilandra yunnanensis,6,122
+700,Ypsilandra yunnanensis,7,131
+701,Ypsilandra yunnanensis,7,126
+702,Ypsilandra yunnanensis,7,131
+703,Ypsilandra yunnanensis,7,124
+704,Ypsilandra yunnanensis,7,124
+705,Ypsilandra yunnanensis,7,122
+706,Ypsilandra yunnanensis,7,124
+707,Ypsilandra yunnanensis,7,120
+708,Ypsilandra yunnanensis,7,124
+709,Ypsilandra yunnanensis,7,140
+710,Ypsilandra yunnanensis,7,124
+711,Ypsilandra yunnanensis,7,125
+712,Ypsilandra yunnanensis,7,125
+713,Ypsilandra yunnanensis,7,122
+714,Ypsilandra yunnanensis,7,145
+715,Ypsilandra yunnanensis,7,122
+716,Ypsilandra yunnanensis,7,145
+717,Ypsilandra yunnanensis,7,145
+718,Ypsilandra yunnanensis,7,112
+719,Ypsilandra yunnanensis,7,188
+720,Ypsilandra yunnanensis,7,188
+721,Ypsilandra yunnanensis,7,162
+722,Ypsilandra yunnanensis,7,162
+723,Ypsilandra yunnanensis,7,162
+724,Ypsilandra yunnanensis,7,162
+725,Ypsilandra yunnanensis,7,162
+726,Ypsilandra yunnanensis,7,214
+727,Ypsilandra yunnanensis,7,214
+728,Ypsilandra yunnanensis,7,214
+729,Ypsilandra yunnanensis,7,218
+730,Ypsilandra yunnanensis,7,147
+731,Ypsilandra yunnanensis,7,143
+732,Ypsilandra yunnanensis,7,143
+733,Ypsilandra yunnanensis,7,143
+734,Ypsilandra yunnanensis,7,214
+735,Ypsilandra yunnanensis,7,143
+736,Ypsilandra yunnanensis,7,143
+737,Ypsilandra yunnanensis,7,214
+738,Ypsilandra yunnanensis,7,143
+739,Ypsilandra yunnanensis,7,143
+740,Ypsilandra yunnanensis,7,143
+741,Ypsilandra yunnanensis,7,143
+742,Ypsilandra yunnanensis,7,143
+743,Ypsilandra yunnanensis,7,143
+744,Ypsilandra yunnanensis,7,143
+745,Ypsilandra yunnanensis,7,214
+746,Ypsilandra yunnanensis,7,214
+747,Ypsilandra yunnanensis,7,214
+748,Ypsilandra yunnanensis,7,214
+749,Ypsilandra yunnanensis,7,214
+750,Ypsilandra yunnanensis,7,214
+751,Ypsilandra yunnanensis,7,214
+752,Ypsilandra yunnanensis,7,143
+753,Ypsilandra yunnanensis,7,143
+754,Ypsilandra yunnanensis,7,214
+755,Ypsilandra yunnanensis,7,206
+756,Ypsilandra yunnanensis,7,131
+757,Heloniopsis umbellata,2,116
+758,Heloniopsis umbellata,3,121
+759,Heloniopsis umbellata,2,78
+760,Heloniopsis umbellata,4,116
+761,Heloniopsis umbellata,4,85
+762,Heloniopsis umbellata,1,111
+763,Heloniopsis umbellata,1,111
+764,Heloniopsis umbellata,2,70
+765,Heloniopsis umbellata,2,116
+766,Heloniopsis umbellata,2,116
+767,Heloniopsis umbellata,2,91
+768,Heloniopsis umbellata,2,105
+769,Heloniopsis umbellata,2,145
+770,Heloniopsis umbellata,2,69
+771,Heloniopsis umbellata,2,75
+772,Heloniopsis umbellata,2,93
+773,Heloniopsis umbellata,3,121
+774,Heloniopsis umbellata,2,112
+775,Heloniopsis umbellata,3,83
+776,Heloniopsis umbellata,2,68
+777,Heloniopsis umbellata,2,110
+778,Heloniopsis umbellata,3,87
+779,Heloniopsis umbellata,3,87
+780,Heloniopsis umbellata,2,124
+781,Heloniopsis umbellata,1,53
+782,Heloniopsis umbellata,1,81
+783,Heloniopsis umbellata,1,81
+784,Heloniopsis umbellata,12,140
+785,Heloniopsis umbellata,1,110
+786,Heloniopsis umbellata,1,85
+787,Heloniopsis umbellata,1,124
+788,Heloniopsis umbellata,1,102
+789,Heloniopsis umbellata,1,83
+790,Heloniopsis umbellata,1,112
+791,Heloniopsis umbellata,2,114
+792,Heloniopsis umbellata,2,114
+793,Heloniopsis umbellata,1,107
+794,Heloniopsis umbellata,2,110
+795,Heloniopsis umbellata,1,83
+796,Heloniopsis umbellata,2,90
+797,Heloniopsis umbellata,2,112
+798,Heloniopsis umbellata,2,136
+799,Heloniopsis umbellata,2,112
+800,Heloniopsis umbellata,2,105
+801,Heloniopsis umbellata,2,68
+802,Heloniopsis umbellata,2,110
+803,Heloniopsis umbellata,2,104
+804,Heloniopsis umbellata,2,104
+805,Heloniopsis umbellata,2,104
+806,Heloniopsis umbellata,2,104
+807,Heloniopsis umbellata,2,86
+808,Heloniopsis umbellata,2,104
+809,Heloniopsis umbellata,2,104
+810,Heloniopsis umbellata,2,114
+811,Heloniopsis umbellata,2,148
+812,Heloniopsis umbellata,2,69
+813,Heloniopsis umbellata,2,70
+814,Heloniopsis umbellata,3,87
+815,Heloniopsis umbellata,3,79
+816,Heloniopsis umbellata,3,79
+817,Heloniopsis umbellata,3,79
+818,Heloniopsis umbellata,3,88
+819,Heloniopsis umbellata,3,93
+820,Heloniopsis umbellata,3,151
+821,Heloniopsis umbellata,3,86
+822,Heloniopsis umbellata,3,70
+823,Heloniopsis umbellata,2,104
+824,Heloniopsis umbellata,3,86
+825,Heloniopsis umbellata,2,114
+826,Heloniopsis umbellata,2,114
+827,Heloniopsis umbellata,3,96
+828,Heloniopsis tubiflora,4,86
+829,Heloniopsis tubiflora,4,56
+830,Heloniopsis tubiflora,4,56
+831,Heloniopsis tubiflora,4,55
+832,Heloniopsis tubiflora,4,51
+833,Heloniopsis tubiflora,4,51
+834,Heloniopsis tubiflora,4,68
+835,Heloniopsis tubiflora,4,93
+836,Heloniopsis tubiflora,4,60
+837,Heloniopsis tubiflora,4,86
+838,Heloniopsis tubiflora,4,59
+839,Heloniopsis tubiflora,4,108
+840,Heloniopsis tubiflora,4,47
+841,Heloniopsis tubiflora,5,137
+842,Heloniopsis tubiflora,5,105
+843,Heloniopsis tubiflora,5,105
+844,Heloniopsis tubiflora,5,107
+845,Heloniopsis tubiflora,5,104
+846,Heloniopsis tubiflora,5,104
+847,Heloniopsis tubiflora,5,117
+848,Heloniopsis tubiflora,5,139
+849,Heloniopsis tubiflora,5,113
+850,Heloniopsis tubiflora,5,143
+851,Heloniopsis tubiflora,5,109
+852,Heloniopsis tubiflora,5,160
+853,Heloniopsis tubiflora,5,97

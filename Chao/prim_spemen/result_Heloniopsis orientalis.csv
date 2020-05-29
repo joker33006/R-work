@@ -1,0 +1,351 @@
+,V1,decimalLongitude,decimalLatitude,key,scientificName,year,month,day,t_r,V3
+1,1,139.101094,35.439622,1829942864,Heloniopsis orientalis var. breviscapa (Maxim.) Ohwi,2016,4,12,103,Heloniopsis orientalis var. breviscapa
+2,2,139.040594,35.232447,1829929140,Heloniopsis orientalis var. breviscapa (Maxim.) Ohwi,2015,5,4,137,Heloniopsis orientalis var. breviscapa
+3,3,139.22807,35.424094,1829917534,Heloniopsis orientalis var. breviscapa (Maxim.) Ohwi,2014,5,25,165,Heloniopsis orientalis var. breviscapa
+4,4,139.053091,35.224114,1829919426,Heloniopsis orientalis var. breviscapa (Maxim.) Ohwi,2013,6,28,183,Heloniopsis orientalis var. breviscapa
+5,5,139.053091,35.224114,2244425743,Heloniopsis orientalis var. breviscapa (Maxim.) Ohwi,2013,6,28,183,Heloniopsis orientalis var. breviscapa
+6,6,135.695,34.538056,1830519592,Heloniopsis orientalis var. breviscapa (Maxim.) Ohwi,2010,3,4,93,Heloniopsis orientalis var. breviscapa
+7,7,130.72838,33.330513,1829852569,Heloniopsis orientalis var. breviscapa (Maxim.) Ohwi,2007,3,27,105,Heloniopsis orientalis var. breviscapa
+8,8,131.041385,32.857539,388830938,Heloniopsis orientalis var. breviscapa (Maxim.) Ohwi,2007,4,11,122,Heloniopsis orientalis var. breviscapa
+9,9,139.040599,35.124125,1829868229,Heloniopsis orientalis var. breviscapa (Maxim.) Ohwi,2006,5,24,155,Heloniopsis orientalis var. breviscapa
+10,10,131.199444,32.938889,1829908391,Heloniopsis orientalis var. breviscapa (Maxim.) Ohwi,1990,5,18,161,Heloniopsis orientalis var. breviscapa
+11,11,139.101094,35.439622,1829942864,Heloniopsis orientalis var. breviscapa (Maxim.) Ohwi,2016,4,12,103,Heloniopsis orientalis var. breviscapa
+12,12,139.040594,35.232447,1829929140,Heloniopsis orientalis var. breviscapa (Maxim.) Ohwi,2015,5,4,137,Heloniopsis orientalis var. breviscapa
+13,13,130.957778,33.114444,2243101756,Helonias breviscapa (Maxim.) N.Tanaka,2014,3,24,81,Heloniopsis orientalis var. breviscapa
+14,14,139.22807,35.424094,1829917534,Heloniopsis orientalis var. breviscapa (Maxim.) Ohwi,2014,5,25,165,Heloniopsis orientalis var. breviscapa
+15,15,139.053091,35.224114,1829919426,Heloniopsis orientalis var. breviscapa (Maxim.) Ohwi,2013,6,28,183,Heloniopsis orientalis var. breviscapa
+16,16,139.053091,35.224114,2244425743,Heloniopsis orientalis var. breviscapa (Maxim.) Ohwi,2013,6,28,183,Heloniopsis orientalis var. breviscapa
+17,17,130.82,31.48000003,1931746128,Helonias breviscapa (Maxim.) N.Tanaka,2011,9,13,203,Heloniopsis orientalis var. breviscapa
+18,18,135.695,34.538056,1830519592,Heloniopsis orientalis var. breviscapa (Maxim.) Ohwi,2010,3,4,93,Heloniopsis orientalis var. breviscapa
+19,19,130.72838,33.330513,1829852569,Heloniopsis orientalis var. breviscapa (Maxim.) Ohwi,2007,3,27,105,Heloniopsis orientalis var. breviscapa
+20,20,131.45,32.066667,1933897215,Heloniopsis breviscapa var. breviscapa,2007,4,28,169,Heloniopsis orientalis var. breviscapa
+21,21,131.041385,32.857539,388830938,Heloniopsis orientalis var. breviscapa (Maxim.) Ohwi,2007,4,11,122,Heloniopsis orientalis var. breviscapa
+22,22,132.19,34.566944,1830525004,Heloniopsis breviscapa Maxim.,2007,6,13,196,Heloniopsis orientalis var. breviscapa
+23,23,134.083333,33.466667,1830671522,Helonias breviscapa (Maxim.) N.Tanaka,2006,3,18,85,Heloniopsis orientalis var. breviscapa
+24,24,133.583333,33.633333,1830671525,Helonias breviscapa (Maxim.) N.Tanaka,2006,4,18,138,Heloniopsis orientalis var. breviscapa
+25,25,134.216667,33.566667,1830671582,Helonias breviscapa (Maxim.) N.Tanaka,2006,4,17,150,Heloniopsis orientalis var. breviscapa
+26,26,133.583333,33.633333,1830672902,Helonias breviscapa (Maxim.) N.Tanaka,2006,4,18,138,Heloniopsis orientalis var. breviscapa
+27,27,139.040599,35.124125,1829868229,Heloniopsis orientalis var. breviscapa (Maxim.) Ohwi,2006,5,24,155,Heloniopsis orientalis var. breviscapa
+28,28,134.233333,33.533333,1830671545,Helonias breviscapa (Maxim.) N.Tanaka,2006,7,4,264,Heloniopsis orientalis var. breviscapa
+29,29,134.487713,34.01951,1830624396,Helonias breviscapa (Maxim.) N.Tanaka,2004,4,15,152,Heloniopsis orientalis var. breviscapa
+30,30,134.221381,33.585399,1830631861,Helonias breviscapa (Maxim.) N.Tanaka,2002,3,2,98,Heloniopsis orientalis var. breviscapa
+31,31,133.55,33.766667,2244521481,Helonias breviscapa (Maxim.) N.Tanaka,2002,5,24,179,Heloniopsis orientalis var. breviscapa
+32,32,133.55,33.766667,2244522934,Helonias breviscapa (Maxim.) N.Tanaka,2002,5,23,179,Heloniopsis orientalis var. breviscapa
+33,33,133.566667,33.75,2244523047,Helonias breviscapa (Maxim.) N.Tanaka,2002,5,23,184,Heloniopsis orientalis var. breviscapa
+34,34,134.327095,33.818648,1830631502,Helonias breviscapa (Maxim.) N.Tanaka,1998,3,18,80,Heloniopsis orientalis var. breviscapa
+35,35,134.21902,33.555597,1830643510,Helonias breviscapa (Maxim.) N.Tanaka,1998,3,13,104,Heloniopsis orientalis var. breviscapa
+36,36,130.9769,32.6343,1933931030,Heloniopsis breviscapa var. breviscapa,1994,4,1,149,Heloniopsis orientalis var. breviscapa
+37,37,131.199444,32.938889,1829908391,Heloniopsis orientalis var. breviscapa (Maxim.) Ohwi,1990,5,18,161,Heloniopsis orientalis var. breviscapa
+38,38,130.9592,32.6428,1933931022,Heloniopsis breviscapa var. breviscapa,1985,3,24,91,Heloniopsis orientalis var. breviscapa
+39,39,131.0585,33.1517,1933931072,Heloniopsis breviscapa var. breviscapa,1985,3,25,84,Heloniopsis orientalis var. breviscapa
+40,40,131.3939,32.3295,1933931089,Heloniopsis breviscapa var. breviscapa,1985,3,21,107,Heloniopsis orientalis var. breviscapa
+41,41,131.4403,33.1456,1933931102,Heloniopsis breviscapa var. breviscapa,1985,3,26,87,Heloniopsis orientalis var. breviscapa
+42,42,133.7536,33.961,1933931039,Heloniopsis breviscapa var. breviscapa,1985,4,1,146,Heloniopsis orientalis var. breviscapa
+43,43,134.2258,34.0401,1933931046,Heloniopsis breviscapa var. breviscapa,1985,4,1,151,Heloniopsis orientalis var. breviscapa
+44,44,133.3776,33.9273,1933931101,Heloniopsis breviscapa var. breviscapa,1985,4,2,140,Heloniopsis orientalis var. breviscapa
+45,45,130.3496,33.483,1933931015,Heloniopsis breviscapa var. breviscapa,1982,3,28,99,Heloniopsis orientalis var. breviscapa
+46,46,131.19661,32.89853,1933826878,Heloniopsis breviscapa var. breviscapa,1979,5,8,159,Heloniopsis orientalis var. breviscapa
+47,47,131.19661,32.89853,1933826879,Heloniopsis breviscapa var. breviscapa,1979,5,8,159,Heloniopsis orientalis var. breviscapa
+48,48,130.72908,32.35936,1933826872,Heloniopsis breviscapa var. breviscapa,1974,3,30,87,Heloniopsis orientalis var. breviscapa
+49,49,130.72908,32.35936,1933826897,Heloniopsis breviscapa var. breviscapa,1974,3,30,87,Heloniopsis orientalis var. breviscapa
+50,50,130.72908,32.35936,1933826954,Heloniopsis breviscapa var. breviscapa,1974,3,30,87,Heloniopsis orientalis var. breviscapa
+51,51,140.15555,35.159,1933873121,Heloniopsis breviscapa var. breviscapa,1974,4,7,132,Heloniopsis orientalis var. breviscapa
+52,52,140.1523,35.1623,1933930901,Heloniopsis breviscapa var. breviscapa,1970,4,5,132,Heloniopsis orientalis var. breviscapa
+53,53,134.325233,33.887,1830621099,Helonias breviscapa (Maxim.) N.Tanaka,1969,8,8,213,Heloniopsis orientalis var. breviscapa
+54,54,133.586693,33.641965,1830641635,Helonias breviscapa (Maxim.) N.Tanaka,1966,3,20,84,Heloniopsis orientalis var. breviscapa
+55,55,130.90202,33.48381,1933910174,Heloniopsis breviscapa var. breviscapa,1966,5,3,167,Heloniopsis orientalis var. breviscapa
+56,56,130.90202,33.48381,1933910188,Heloniopsis breviscapa var. breviscapa,1966,5,3,167,Heloniopsis orientalis var. breviscapa
+57,57,140.1523,35.1623,1933930968,Heloniopsis breviscapa var. breviscapa,1966,5,4,172,Heloniopsis orientalis var. breviscapa
+58,58,140.15555,35.159,1933873042,Heloniopsis breviscapa var. breviscapa,1965,4,18,132,Heloniopsis orientalis var. breviscapa
+59,59,139.226,35.5225,1933976971,Heloniopsis breviscapa var. breviscapa,1963,4,21,127,Heloniopsis orientalis var. breviscapa
+60,60,139.226,35.5225,1933977023,Heloniopsis breviscapa var. breviscapa,1963,4,21,127,Heloniopsis orientalis var. breviscapa
+61,61,140.15555,35.159,1933873182,Heloniopsis breviscapa var. breviscapa,1962,4,22,132,Heloniopsis orientalis var. breviscapa
+62,62,140.15555,35.159,1933873204,Heloniopsis breviscapa var. breviscapa,1962,4,22,132,Heloniopsis orientalis var. breviscapa
+63,63,139.2821,35.5282,1933930934,Heloniopsis breviscapa var. breviscapa,1960,4,8,135,Heloniopsis orientalis var. breviscapa
+64,64,139.1658,35.47108,1830215552,Helonias breviscapa (Maxim.) N.Tanaka,1956,6,5,149,Heloniopsis orientalis var. breviscapa
+65,65,140.15555,35.159,1933872804,Heloniopsis breviscapa var. breviscapa,1954,3,28,86,Heloniopsis orientalis var. breviscapa
+66,66,130.9992,32.9175,1933931061,Heloniopsis breviscapa var. breviscapa,1954,4,2,135,Heloniopsis orientalis var. breviscapa
+67,67,139.4482,35.6525,1933992290,Heloniopsis breviscapa var. breviscapa,1952,4,7,141,Heloniopsis orientalis var. breviscapa
+68,68,131.2463,31.6374,1933931070,Heloniopsis breviscapa var. breviscapa,1949,4,14,164,Heloniopsis orientalis var. breviscapa
+69,69,131.2463,31.6374,1933931082,Heloniopsis breviscapa var. breviscapa,1949,4,14,164,Heloniopsis orientalis var. breviscapa
+70,70,131.3798,31.689,1933931055,Heloniopsis breviscapa var. breviscapa,1948,4,8,172,Heloniopsis orientalis var. breviscapa
+71,71,131.3798,31.689,1933931071,Heloniopsis breviscapa var. breviscapa,1948,4,8,172,Heloniopsis orientalis var. breviscapa
+72,72,131.1847,31.678,1933977059,Heloniopsis breviscapa var. breviscapa,1942,5,22,188,Heloniopsis orientalis var. breviscapa
+73,73,130.0907,32.9641,1934164694,Heloniopsis breviscapa var. breviscapa,1941,3,1,75,Heloniopsis orientalis var. breviscapa
+74,74,139.4516,35.651,1933992286,Heloniopsis breviscapa var. breviscapa,1938,4,3,141,Heloniopsis orientalis var. breviscapa
+75,75,140.1523,35.1623,1933930914,Heloniopsis breviscapa var. breviscapa,1938,5,1,172,Heloniopsis orientalis var. breviscapa
+76,76,140.1523,35.1623,1933930860,Heloniopsis breviscapa var. breviscapa,1937,4,8,132,Heloniopsis orientalis var. breviscapa
+77,77,140.1523,35.1623,1933930923,Heloniopsis breviscapa var. breviscapa,1937,4,8,132,Heloniopsis orientalis var. breviscapa
+78,78,140.1523,35.1623,1933930947,Heloniopsis breviscapa var. breviscapa,1934,4,8,132,Heloniopsis orientalis var. breviscapa
+79,79,140.1523,35.1623,1933926168,Heloniopsis breviscapa var. breviscapa,1931,5,1,172,Heloniopsis orientalis var. breviscapa
+80,80,140.1523,35.1623,1933930906,Heloniopsis breviscapa var. breviscapa,1931,5,28,172,Heloniopsis orientalis var. breviscapa
+81,81,140.1523,35.1623,1933926178,Heloniopsis breviscapa var. breviscapa,1929,5,5,172,Heloniopsis orientalis var. breviscapa
+82,82,134.4486,33.9785,1933930907,Heloniopsis breviscapa var. breviscapa,1913,4,30,141,Heloniopsis orientalis var. breviscapa
+83,83,139.046,35.212,1934003239,Heloniopsis breviscapa var. breviscapa,1913,6,20,171,Heloniopsis orientalis var. breviscapa
+84,84,134.19867,34.01394,1933941656,Heloniopsis breviscapa var. breviscapa,1903,4,30,104,Heloniopsis orientalis var. breviscapa
+85,85,140.1523,35.1623,1933905009,Heloniopsis breviscapa var. breviscapa,1875,4,29,132,Heloniopsis orientalis var. breviscapa
+86,1,139.028094,35.299103,1829943363,Heloniopsis orientalis var. flavida (Nakai) Ohwi,2016,4,1,110,Heloniopsis orientalis var. flavida
+87,2,140.015506,35.165811,1829937518,Heloniopsis orientalis var. flavida (Nakai) Ohwi,2015,3,30,87,Heloniopsis orientalis var. flavida
+88,3,139.028094,35.299103,1829942052,Heloniopsis orientalis var. flavida (Nakai) Ohwi,2015,12,8,41,Heloniopsis orientalis var. flavida
+89,4,135.25,34.75,2244511992,Heloniopsis orientalis var. flavida (Nakai) Ohwi,2014,4,27,121,Heloniopsis orientalis var. flavida
+90,5,135.20625,34.720833,1830537301,Heloniopsis orientalis var. flavida (Nakai) Ohwi,2013,4,5,131,Heloniopsis orientalis var. flavida
+91,6,133.75157,33.759232,1829866993,Heloniopsis orientalis var. flavida (Nakai) Ohwi,2011,5,24,130,Heloniopsis orientalis var. flavida
+92,7,135.91115,34.56447,204379789,Heloniopsis orientalis var. flavida (Nakai) Ohwi,2006,3,29,76,Heloniopsis orientalis var. flavida
+93,8,135.9241,34.56277,204379790,Heloniopsis orientalis var. flavida (Nakai) Ohwi,2006,3,29,75,Heloniopsis orientalis var. flavida
+94,9,135.86116,34.46801,204379782,Heloniopsis orientalis var. flavida (Nakai) Ohwi,2006,4,9,123,Heloniopsis orientalis var. flavida
+95,10,135.85034,34.44655,204379783,Heloniopsis orientalis var. flavida (Nakai) Ohwi,2006,4,9,122,Heloniopsis orientalis var. flavida
+96,11,135.86116,34.46801,204379784,Heloniopsis orientalis var. flavida (Nakai) Ohwi,2006,4,9,123,Heloniopsis orientalis var. flavida
+97,12,134.183333,33.566667,1830678444,Heloniopsis orientalis var. flavida (Nakai) Ohwi,2005,3,26,80,Heloniopsis orientalis var. flavida
+98,13,133.883333,33.633333,1830680903,Heloniopsis orientalis var. flavida (Nakai) Ohwi,2005,3,5,73,Heloniopsis orientalis var. flavida
+99,14,132.333333,34.416667,1830520013,Heloniopsis orientalis var. flavida (Nakai) Ohwi,2005,4,24,132,Heloniopsis orientalis var. flavida
+100,15,133.3,33.716667,1830678265,Heloniopsis orientalis var. flavida (Nakai) Ohwi,2005,4,11,116,Heloniopsis orientalis var. flavida
+101,16,133.833333,33.616667,1830680369,Heloniopsis orientalis var. flavida (Nakai) Ohwi,2005,4,2,128,Heloniopsis orientalis var. flavida
+102,17,134.05,33.566667,1830680377,Heloniopsis orientalis var. flavida (Nakai) Ohwi,2005,4,17,137,Heloniopsis orientalis var. flavida
+103,18,133.6,33.733333,1830680918,Heloniopsis orientalis var. flavida (Nakai) Ohwi,2005,4,22,136,Heloniopsis orientalis var. flavida
+104,19,133.3,33.716667,1934052265,Heloniopsis orientalis var. flavida (Nakai) Ohwi,2005,4,11,116,Heloniopsis orientalis var. flavida
+105,20,139.178073,35.457421,388830889,Heloniopsis orientalis var. flavida (Nakai) Ohwi,2005,10,21,118,Heloniopsis orientalis var. flavida
+106,21,133.9,33.733333,1830686145,Heloniopsis orientalis var. flavida (Nakai) Ohwi,2004,3,24,89,Heloniopsis orientalis var. flavida
+107,22,133.766667,33.783333,1830686186,Heloniopsis orientalis var. flavida (Nakai) Ohwi,2004,3,19,85,Heloniopsis orientalis var. flavida
+108,23,133.566667,33.733333,1830686307,Heloniopsis orientalis var. flavida (Nakai) Ohwi,2004,3,13,74,Heloniopsis orientalis var. flavida
+109,24,135.73318,34.4429,204379779,Heloniopsis orientalis var. flavida (Nakai) Ohwi,2003,4,17,147,Heloniopsis orientalis var. flavida
+110,25,135.233333,34.75,1933838527,Heloniopsis orientalis var. flavida (Nakai) Ohwi,2001,5,11,155,Heloniopsis orientalis var. flavida
+111,26,139.10308,35.440754,388830851,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1999,4,21,103,Heloniopsis orientalis var. flavida
+112,27,139.040593,35.224114,388830853,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1999,4,30,91,Heloniopsis orientalis var. flavida
+113,28,135.95116,34.49162,204379791,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1999,5,4,179,Heloniopsis orientalis var. flavida
+114,29,135.87511,34.4044,204379788,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1998,3,26,86,Heloniopsis orientalis var. flavida
+115,30,133.910889,35.091556,395767211,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1998,4,4,134,Heloniopsis orientalis var. flavida
+116,31,139.078089,35.215783,388830845,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1998,10,7,153,Heloniopsis orientalis var. flavida
+117,32,139.10308,35.440754,388830813,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1997,4,10,103,Heloniopsis orientalis var. flavida
+118,33,139.10308,35.440754,388830814,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1997,4,10,103,Heloniopsis orientalis var. flavida
+119,34,138.9906,35.21578,388830829,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1997,5,13,137,Heloniopsis orientalis var. flavida
+120,35,135.84082,34.54226,204379785,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1997,6,8,232,Heloniopsis orientalis var. flavida
+121,36,139.053086,35.490748,388830816,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1997,6,13,181,Heloniopsis orientalis var. flavida
+122,37,134.83299,35.0667,729297334,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1997,6,22,196,Heloniopsis orientalis var. flavida
+123,38,135.89224,34.42646,204379780,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1996,4,2,125,Heloniopsis orientalis var. flavida
+124,39,135.70021,34.35019,204379781,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1996,4,3,148,Heloniopsis orientalis var. flavida
+125,40,135.25,34.766701,729278954,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1996,4,26,104,Heloniopsis orientalis var. flavida
+127,42,135.33299,34.849998,729316242,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1995,5,19,170,Heloniopsis orientalis var. flavida
+128,43,135.25,34.733299,729276281,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1994,3,26,82,Heloniopsis orientalis var. flavida
+129,44,135.683333,34.533333,1933930926,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1994,4,10,147,Heloniopsis orientalis var. flavida
+130,45,135.70073,34.51492,204379775,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1994,4,10,148,Heloniopsis orientalis var. flavida
+131,46,135.92606,34.56942,204379776,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1994,4,11,125,Heloniopsis orientalis var. flavida
+132,47,139.103079,35.524079,295907970,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1994,4,17,112,Heloniopsis orientalis var. flavida
+133,48,135.25,34.733299,729276235,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1994,4,16,138,Heloniopsis orientalis var. flavida
+134,49,135.2,34.716702,729275798,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1994,5,1,178,Heloniopsis orientalis var. flavida
+135,50,135.233,34.783298,729277797,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1994,5,21,167,Heloniopsis orientalis var. flavida
+136,51,135.217,34.75,729278996,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1994,5,28,153,Heloniopsis orientalis var. flavida
+137,52,135.317,34.766701,729294502,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1994,5,3,184,Heloniopsis orientalis var. flavida
+138,53,135.317,34.8167,729295549,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1994,5,3,192,Heloniopsis orientalis var. flavida
+139,54,135.267,34.783298,729276140,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1994,6,4,195,Heloniopsis orientalis var. flavida
+140,55,135.217,34.75,729279048,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1994,6,25,194,Heloniopsis orientalis var. flavida
+141,56,135.283,34.849998,729277017,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1993,3,27,75,Heloniopsis orientalis var. flavida
+142,57,135.71767,34.49286,204379777,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1993,4,12,148,Heloniopsis orientalis var. flavida
+143,58,135.79846,34.40693,204379792,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1993,5,8,187,Heloniopsis orientalis var. flavida
+144,59,135.25,34.766701,729277224,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1993,5,20,151,Heloniopsis orientalis var. flavida
+145,60,135.25,34.766701,729278789,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1993,5,3,151,Heloniopsis orientalis var. flavida
+146,61,135.25,34.75,729278814,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1993,5,3,168,Heloniopsis orientalis var. flavida
+147,62,135.233,34.766701,729279030,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1993,5,17,161,Heloniopsis orientalis var. flavida
+148,63,139.190572,35.465754,295907749,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1993,8,19,220,Heloniopsis orientalis var. flavida
+149,64,139.10308,35.440754,295907746,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1993,10,16,141,Heloniopsis orientalis var. flavida
+150,65,140.159244,35.328289,2576017009,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1992,3,28,94,Heloniopsis orientalis var. flavida
+151,66,140.171742,35.328289,624040623,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1992,3,28,96,Heloniopsis orientalis var. flavida
+152,67,135.217,34.766701,729277447,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1992,5,14,164,Heloniopsis orientalis var. flavida
+153,68,135.7424,34.46184,204379778,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1991,4,15,148,Heloniopsis orientalis var. flavida
+154,69,135.33299,34.849998,729316689,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1991,4,20,124,Heloniopsis orientalis var. flavida
+155,70,139.065591,35.24078,295907657,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1990,4,9,109,Heloniopsis orientalis var. flavida
+156,71,139.290564,35.449092,295907116,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1987,5,15,182,Heloniopsis orientalis var. flavida
+157,72,139.078083,35.499081,295907117,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1987,6,22,171,Heloniopsis orientalis var. flavida
+158,73,140.146744,35.161647,2576018991,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1986,4,20,133,Heloniopsis orientalis var. flavida
+159,74,135.3,34.783298,729273109,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1986,4,6,126,Heloniopsis orientalis var. flavida
+160,75,135.3,34.783298,729273110,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1986,4,6,126,Heloniopsis orientalis var. flavida
+161,76,134.2483,33.783,1933931088,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1985,3,31,85,Heloniopsis orientalis var. flavida
+162,77,134.83299,35.0667,729294121,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1985,4,13,108,Heloniopsis orientalis var. flavida
+163,78,139.140576,35.499082,295907112,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1985,5,19,115,Heloniopsis orientalis var. flavida
+164,79,139.240569,35.449091,295907115,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1984,7,1,208,Heloniopsis orientalis var. flavida
+165,80,135.6095,34.1812,1933930878,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1983,4,4,106,Heloniopsis orientalis var. flavida
+166,81,139.253066,35.540747,295907114,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1982,4,11,128,Heloniopsis orientalis var. flavida
+167,82,133.4324,33.5462,43212330,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1982,4,11,160,Heloniopsis orientalis var. flavida
+168,83,139.140576,35.499082,295907113,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1980,6,15,152,Heloniopsis orientalis var. flavida
+169,84,133.75625,33.754167,1830663634,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1979,4,29,89,Heloniopsis orientalis var. flavida
+170,85,133.53574,33.55642,43212328,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1978,7,31,271,Heloniopsis orientalis var. flavida
+171,86,133.79375,33.7625,1830663176,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1975,3,22,56,Heloniopsis orientalis var. flavida
+172,87,134.28049,33.51547,43212258,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1975,3,27,113,Heloniopsis orientalis var. flavida
+173,88,134.208734,34.008925,1829859235,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1975,4,7,128,Heloniopsis orientalis var. flavida
+174,89,134.208734,34.008925,1829859954,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1975,4,7,128,Heloniopsis orientalis var. flavida
+175,90,134.208734,34.008925,1829859958,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1975,4,7,128,Heloniopsis orientalis var. flavida
+176,91,132.05695,34.464,1933826737,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1972,4,24,77,Heloniopsis orientalis var. flavida
+177,92,135.5912,34.2156,1933954471,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1971,3,20,56,Heloniopsis orientalis var. flavida
+178,93,131.637,34.4857,1933930897,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1971,4,7,121,Heloniopsis orientalis var. flavida
+179,94,131.9415,34.1681,1933930902,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1971,4,11,128,Heloniopsis orientalis var. flavida
+180,95,132.0252,34.3739,1933930912,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1971,4,11,123,Heloniopsis orientalis var. flavida
+181,96,131.7405,34.3684,1933930925,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1971,4,11,105,Heloniopsis orientalis var. flavida
+182,97,131.7405,34.3684,1934045931,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1971,4,11,105,Heloniopsis orientalis var. flavida
+183,98,133.53574,33.55642,43211857,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1970,4,29,160,Heloniopsis orientalis var. flavida
+184,99,133.37758,33.87172,1933931104,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1970,5,5,120,Heloniopsis orientalis var. flavida
+185,100,131.9415,34.1681,1933930881,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1969,3,31,81,Heloniopsis orientalis var. flavida
+186,101,134.65193,33.95582,43211855,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1969,8,8,283,Heloniopsis orientalis var. flavida
+187,102,133.65704,33.59174,43212305,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1966,3,20,111,Heloniopsis orientalis var. flavida
+188,103,132.0283,34.0614,1933930920,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1966,4,17,138,Heloniopsis orientalis var. flavida
+189,104,132.0252,34.3739,1933930949,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1966,4,17,123,Heloniopsis orientalis var. flavida
+190,105,133.53574,33.55642,43212310,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1965,5,16,200,Heloniopsis orientalis var. flavida
+191,106,133.64203,33.58078,43212312,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1965,5,5,200,Heloniopsis orientalis var. flavida
+192,107,134.65193,33.95582,43212334,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1965,8,4,283,Heloniopsis orientalis var. flavida
+193,108,134.44717,34.0782,43212331,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1964,8,7,284,Heloniopsis orientalis var. flavida
+194,109,136.1099,34.9441,1933977040,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1963,4,3,117,Heloniopsis orientalis var. flavida
+195,110,134.53708,33.73306,43212343,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1962,8,4,281,Heloniopsis orientalis var. flavida
+196,111,133.53574,33.55642,43212306,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1962,11,25,151,Heloniopsis orientalis var. flavida
+197,112,136.5127,34.2889,1933930856,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1961,3,23,102,Heloniopsis orientalis var. flavida
+198,113,136.5127,34.2889,1933930916,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1961,3,23,102,Heloniopsis orientalis var. flavida
+199,114,133.53574,33.55642,43212307,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1961,5,29,200,Heloniopsis orientalis var. flavida
+200,115,136.4455,35.0158,1933976987,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1960,7,21,244,Heloniopsis orientalis var. flavida
+201,116,136.4455,35.0158,1933977029,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1960,7,21,244,Heloniopsis orientalis var. flavida
+202,117,136.4292,35.019,1933992282,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1959,3,1,41,Heloniopsis orientalis var. flavida
+203,118,136.4292,35.019,1933992381,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1959,3,1,41,Heloniopsis orientalis var. flavida
+204,119,135.79846,34.40693,204379787,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1958,3,26,88,Heloniopsis orientalis var. flavida
+205,120,133.53574,33.55642,43212309,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1955,7,19,271,Heloniopsis orientalis var. flavida
+206,121,136.0908,34.5603,1933966138,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1954,5,23,172,Heloniopsis orientalis var. flavida
+207,122,136.7011,34.4826,1933966122,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1953,4,3,152,Heloniopsis orientalis var. flavida
+208,123,134.36575,34.06585,43212320,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1952,3,29,102,Heloniopsis orientalis var. flavida
+209,124,139.22807,35.440758,295907834,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1952,4,13,85,Heloniopsis orientalis var. flavida
+210,125,133.53574,33.55642,43212308,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1952,4,21,160,Heloniopsis orientalis var. flavida
+211,126,135.85925,34.51769,204379786,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1951,3,14,90,Heloniopsis orientalis var. flavida
+212,127,133.81232,34.03289,43212316,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1951,3,27,98,Heloniopsis orientalis var. flavida
+213,128,134.36575,34.06585,43212315,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1950,4,29,155,Heloniopsis orientalis var. flavida
+214,129,134.44717,34.0782,43212318,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1950,4,29,155,Heloniopsis orientalis var. flavida
+215,130,134.44717,34.0782,43212319,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1950,4,29,155,Heloniopsis orientalis var. flavida
+216,131,134.36575,34.06585,43212314,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1948,3,25,102,Heloniopsis orientalis var. flavida
+217,132,134.5198,33.8741,1934144131,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1947,3,28,83,Heloniopsis orientalis var. flavida
+218,133,134.65193,33.95582,43212325,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1947,4,28,157,Heloniopsis orientalis var. flavida
+219,134,134.65193,33.95582,43212326,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1947,4,3,157,Heloniopsis orientalis var. flavida
+220,135,133.81232,34.03289,43212336,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1947,4,24,150,Heloniopsis orientalis var. flavida
+221,136,133.81232,34.03289,43212338,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1947,4,23,150,Heloniopsis orientalis var. flavida
+222,137,133.81232,34.03289,43212340,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1947,4,23,150,Heloniopsis orientalis var. flavida
+223,138,134.57877,34.16953,43212322,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1945,11,18,138,Heloniopsis orientalis var. flavida
+224,139,135.8452,35.0059,1933930945,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1941,4,25,135,Heloniopsis orientalis var. flavida
+225,140,133.71242,33.56778,43212302,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1936,5,10,196,Heloniopsis orientalis var. flavida
+226,141,133.71242,33.56778,43212303,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1935,10,7,196,Heloniopsis orientalis var. flavida
+227,142,135.5912,34.2156,1934003219,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1915,8,1,235,Heloniopsis orientalis var. flavida
+228,143,135.5912,34.2156,1934003243,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1913,3,15,56,Heloniopsis orientalis var. flavida
+229,144,133.6545,33.9506,1934096640,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1889,3,1,88,Heloniopsis orientalis var. flavida
+230,145,135.941,34.2524,1933992281,Heloniopsis orientalis var. flavida (Nakai) Ohwi,1888,5,1,110,Heloniopsis orientalis var. flavida
+231,1,136.37796,34.99507,2576089507,Heloniopsis orientalis var. orientalis,2015,5,29,161,Heloniopsis orientalis var. orientalis
+232,2,135.03125,34.820833,1830530813,Heloniopsis orientalis var. orientalis,2013,4,9,143,Heloniopsis orientalis var. orientalis
+233,3,135.08125,34.7875,1830532002,Heloniopsis orientalis var. orientalis,2013,4,14,142,Heloniopsis orientalis var. orientalis
+234,4,138.130611,36.887917,1934033275,Heloniopsis orientalis var. orientalis,2010,7,24,158,Heloniopsis orientalis var. orientalis
+235,5,138.086667,36.757722,1934033477,Heloniopsis orientalis var. orientalis,2010,7,23,190,Heloniopsis orientalis var. orientalis
+236,6,140.081111,35.153611,1933982372,Heloniopsis orientalis var. orientalis,2008,2,20,68,Heloniopsis orientalis var. orientalis
+237,7,130.831944,31.510028,1934004866,Heloniopsis orientalis var. orientalis,2008,2,20,80,Heloniopsis orientalis var. orientalis
+238,8,137.616667,35.75,1933897837,Heloniopsis orientalis var. orientalis,2008,4,28,82,Heloniopsis orientalis var. orientalis
+239,9,134.545472,35.39525,1933982420,Heloniopsis orientalis var. orientalis,2008,5,9,133,Heloniopsis orientalis var. orientalis
+240,10,132.845028,35.077667,1934032808,Heloniopsis orientalis var. orientalis,2008,5,8,130,Heloniopsis orientalis var. orientalis
+241,11,140.683333,39.45,1933897303,Heloniopsis orientalis var. orientalis,2007,6,8,153,Heloniopsis orientalis var. orientalis
+242,12,134.559497,35.401028,1933863715,Heloniopsis orientalis var. orientalis,2005,4,23,106,Heloniopsis orientalis var. orientalis
+243,13,132.916667,33.3,1830685148,Heloniopsis orientalis var. orientalis,2004,4,10,125,Heloniopsis orientalis var. orientalis
+244,14,133.883333,33.8,1830685168,Heloniopsis orientalis var. orientalis,2004,4,29,74,Heloniopsis orientalis var. orientalis
+245,15,132.9,33.3,1830685195,Heloniopsis orientalis var. orientalis,2004,4,18,114,Heloniopsis orientalis var. orientalis
+246,16,132.883333,33.266667,1830686192,Heloniopsis orientalis var. orientalis,2004,4,10,144,Heloniopsis orientalis var. orientalis
+247,17,133.1,33.533333,1830686361,Heloniopsis orientalis var. orientalis,2004,4,17,138,Heloniopsis orientalis var. orientalis
+248,18,136.4476,35.3393,1933838524,Heloniopsis orientalis var. orientalis,2004,4,6,131,Heloniopsis orientalis var. orientalis
+249,19,133,33.466667,1830686306,Heloniopsis orientalis var. orientalis,2004,5,5,136,Heloniopsis orientalis var. orientalis
+250,20,137.65,35.333333,1933896030,Heloniopsis orientalis var. orientalis,2004,6,16,175,Heloniopsis orientalis var. orientalis
+251,21,133.15,33.316667,1830691778,Heloniopsis orientalis var. orientalis,2003,4,20,142,Heloniopsis orientalis var. orientalis
+252,22,138.189685,36.829897,1829851024,Heloniopsis orientalis var. orientalis,2003,5,11,142,Heloniopsis orientalis var. orientalis
+253,23,135.08299,34.6833,729293524,Heloniopsis orientalis var. orientalis,1998,4,19,143,Heloniopsis orientalis var. orientalis
+254,24,136.605425,36.559725,1829850184,Heloniopsis orientalis var. orientalis,1998,5,17,171,Heloniopsis orientalis var. orientalis
+255,25,134.633,35.483299,729314974,Heloniopsis orientalis var. orientalis,1998,5,10,140,Heloniopsis orientalis var. orientalis
+256,26,134.64999,35.516701,729290420,Heloniopsis orientalis var. orientalis,1998,6,7,195,Heloniopsis orientalis var. orientalis
+257,27,135.067,35.016701,729295860,Heloniopsis orientalis var. orientalis,1997,5,11,165,Heloniopsis orientalis var. orientalis
+258,28,139.156025,34.215913,388830815,Heloniopsis orientalis var. orientalis,1997,6,5,197,Heloniopsis orientalis var. orientalis
+259,29,135.08299,35.049999,729299854,Heloniopsis orientalis var. orientalis,1996,4,28,120,Heloniopsis orientalis var. orientalis
+260,30,134.617,35.466702,729315165,Heloniopsis orientalis var. orientalis,1996,5,16,151,Heloniopsis orientalis var. orientalis
+261,31,134.58299,35.383301,729318307,Heloniopsis orientalis var. orientalis,1996,5,19,154,Heloniopsis orientalis var. orientalis
+262,32,134.517,35.3167,729287148,Heloniopsis orientalis var. orientalis,1996,6,23,165,Heloniopsis orientalis var. orientalis
+263,33,135.233,34.75,729279161,Heloniopsis orientalis var. orientalis,1995,4,29,110,Heloniopsis orientalis var. orientalis
+264,34,135.25,34.983299,729282238,Heloniopsis orientalis var. orientalis,1995,4,15,124,Heloniopsis orientalis var. orientalis
+265,35,135.16701,34.9333,729282721,Heloniopsis orientalis var. orientalis,1995,4,27,137,Heloniopsis orientalis var. orientalis
+266,36,135.217,34.783298,729276823,Heloniopsis orientalis var. orientalis,1995,5,6,173,Heloniopsis orientalis var. orientalis
+267,37,135.283,34.833302,729295761,Heloniopsis orientalis var. orientalis,1995,5,14,181,Heloniopsis orientalis var. orientalis
+268,38,135.283,34.75,729273036,Heloniopsis orientalis var. orientalis,1994,5,5,170,Heloniopsis orientalis var. orientalis
+269,39,135.267,34.950001,729282137,Heloniopsis orientalis var. orientalis,1994,5,4,182,Heloniopsis orientalis var. orientalis
+270,40,135.33299,34.766701,729294519,Heloniopsis orientalis var. orientalis,1994,6,14,226,Heloniopsis orientalis var. orientalis
+271,41,135.283,34.75,729273037,Heloniopsis orientalis var. orientalis,1993,4,15,123,Heloniopsis orientalis var. orientalis
+272,42,135.267,34.9333,729282532,Heloniopsis orientalis var. orientalis,1993,4,17,136,Heloniopsis orientalis var. orientalis
+273,43,135.233,35.133301,729297561,Heloniopsis orientalis var. orientalis,1993,4,17,127,Heloniopsis orientalis var. orientalis
+274,44,135.133,35.099998,729297984,Heloniopsis orientalis var. orientalis,1993,4,6,131,Heloniopsis orientalis var. orientalis
+275,45,135.117,35.099998,729297989,Heloniopsis orientalis var. orientalis,1993,4,6,128,Heloniopsis orientalis var. orientalis
+276,46,135.14999,34.75,729278165,Heloniopsis orientalis var. orientalis,1993,5,5,181,Heloniopsis orientalis var. orientalis
+277,47,135.10001,34.766701,729277941,Heloniopsis orientalis var. orientalis,1992,4,14,138,Heloniopsis orientalis var. orientalis
+278,48,135.217,34.766701,729277446,Heloniopsis orientalis var. orientalis,1992,5,4,164,Heloniopsis orientalis var. orientalis
+279,49,134.66701,35.033298,729292295,Heloniopsis orientalis var. orientalis,1992,5,2,180,Heloniopsis orientalis var. orientalis
+280,50,134.633,35.533298,729310769,Heloniopsis orientalis var. orientalis,1992,5,17,142,Heloniopsis orientalis var. orientalis
+281,51,134.633,35.466702,729315116,Heloniopsis orientalis var. orientalis,1992,6,23,183,Heloniopsis orientalis var. orientalis
+282,52,135.217,35.002201,729284376,Heloniopsis orientalis var. orientalis,1992,7,30,246,Heloniopsis orientalis var. orientalis
+283,53,135,34.5667,729269881,Heloniopsis orientalis var. orientalis,1991,4,7,143,Heloniopsis orientalis var. orientalis
+284,54,134.983,34.5667,729298211,Heloniopsis orientalis var. orientalis,1991,4,7,139,Heloniopsis orientalis var. orientalis
+285,55,135.267,34.883301,729281095,Heloniopsis orientalis var. orientalis,1991,5,24,184,Heloniopsis orientalis var. orientalis
+286,56,134.867,35.083302,729297118,Heloniopsis orientalis var. orientalis,1991,5,3,176,Heloniopsis orientalis var. orientalis
+287,57,135.14999,35.051701,729299747,Heloniopsis orientalis var. orientalis,1991,5,4,171,Heloniopsis orientalis var. orientalis
+288,58,134.983,35.233299,729311521,Heloniopsis orientalis var. orientalis,1991,5,3,157,Heloniopsis orientalis var. orientalis
+289,59,135.10201,35.150299,729319257,Heloniopsis orientalis var. orientalis,1991,6,6,223,Heloniopsis orientalis var. orientalis
+290,60,134.517,35.349998,729325683,Heloniopsis orientalis var. orientalis,1991,6,8,154,Heloniopsis orientalis var. orientalis
+291,61,135.14999,34.783298,729274852,Heloniopsis orientalis var. orientalis,1990,2,4,35,Heloniopsis orientalis var. orientalis
+292,62,135.233,35.75,729273118,Heloniopsis orientalis var. orientalis,1990,4,30,116,Heloniopsis orientalis var. orientalis
+293,63,134.7,35.016701,729301429,Heloniopsis orientalis var. orientalis,1990,6,3,208,Heloniopsis orientalis var. orientalis
+294,64,133.052393,33.346518,1829858349,Heloniopsis orientalis var. orientalis,1989,5,2,164,Heloniopsis orientalis var. orientalis
+295,65,140.5625,36.791667,1934155414,Heloniopsis orientalis var. orientalis,1986,6,26,175,Heloniopsis orientalis var. orientalis
+296,66,135.69417,34.73533,1933826892,Heloniopsis orientalis var. orientalis,1985,4,18,142,Heloniopsis orientalis var. orientalis
+297,67,135.67741,34.40839,1933906377,Heloniopsis orientalis var. orientalis,1983,4,22,98,Heloniopsis orientalis var. orientalis
+298,68,135.67741,34.40839,1933906411,Heloniopsis orientalis var. orientalis,1983,4,22,98,Heloniopsis orientalis var. orientalis
+299,69,140.1152,36.89,1934097880,Heloniopsis orientalis var. orientalis,1981,4,4,119,Heloniopsis orientalis var. orientalis
+300,70,134.64999,34.883301,729325816,Heloniopsis orientalis var. orientalis,1981,6,13,221,Heloniopsis orientalis var. orientalis
+301,71,137.55519,34.91903,1933826923,Heloniopsis orientalis var. orientalis,1979,4,11,146,Heloniopsis orientalis var. orientalis
+302,72,137.55519,34.91903,1933826964,Heloniopsis orientalis var. orientalis,1979,4,11,146,Heloniopsis orientalis var. orientalis
+303,73,134.79849,35.57761,1933826989,Heloniopsis orientalis var. orientalis,1978,4,23,130,Heloniopsis orientalis var. orientalis
+304,74,141.700054,45.034185,388830737,Heloniopsis orientalis var. orientalis,1975,6,25,135,Heloniopsis orientalis var. orientalis
+305,75,143.038174,42.082612,388830716,Heloniopsis orientalis var. orientalis,1974,7,6,178,Heloniopsis orientalis var. orientalis
+306,76,134.533,35.383301,729318151,Heloniopsis orientalis var. orientalis,1973,5,13,134,Heloniopsis orientalis var. orientalis
+307,77,139.588056,33.864444,1829888159,Heloniopsis orientalis var. orientalis,1972,5,7,170,Heloniopsis orientalis var. orientalis
+308,78,139.588056,33.864444,1829888394,Heloniopsis orientalis var. orientalis,1972,5,4,170,Heloniopsis orientalis var. orientalis
+309,79,139.588056,33.864444,1829888407,Heloniopsis orientalis var. orientalis,1972,5,7,170,Heloniopsis orientalis var. orientalis
+310,80,139.164722,34.226667,1829888744,Heloniopsis orientalis var. orientalis,1972,6,26,202,Heloniopsis orientalis var. orientalis
+311,81,135.05,35.200001,729311641,Heloniopsis orientalis var. orientalis,1969,5,25,182,Heloniopsis orientalis var. orientalis
+312,82,133.531243,35.393488,1829870318,Heloniopsis orientalis var. orientalis,1967,5,9,141,Heloniopsis orientalis var. orientalis
+313,83,136.45572,35.15547,1933877850,Heloniopsis orientalis var. orientalis,1966,3,31,40,Heloniopsis orientalis var. orientalis
+314,84,134.634,35.468899,729329523,Heloniopsis orientalis var. orientalis,1966,6,18,170,Heloniopsis orientalis var. orientalis
+315,85,136.4292,35.019,1933892006,Heloniopsis orientalis var. orientalis,1965,5,5,143,Heloniopsis orientalis var. orientalis
+316,86,134.634,35.468899,729327882,Heloniopsis orientalis var. orientalis,1965,5,15,128,Heloniopsis orientalis var. orientalis
+317,87,134.634,35.468899,729328811,Heloniopsis orientalis var. orientalis,1965,5,24,128,Heloniopsis orientalis var. orientalis
+318,88,134.634,35.468899,729329610,Heloniopsis orientalis var. orientalis,1965,6,6,170,Heloniopsis orientalis var. orientalis
+319,89,134.634,35.468899,729328634,Heloniopsis orientalis var. orientalis,1965,8,2,223,Heloniopsis orientalis var. orientalis
+320,90,136.45572,35.15547,1933877870,Heloniopsis orientalis var. orientalis,1963,3,29,40,Heloniopsis orientalis var. orientalis
+321,91,136.45572,35.15547,1933877875,Heloniopsis orientalis var. orientalis,1963,3,29,40,Heloniopsis orientalis var. orientalis
+322,92,139.156025,34.215913,388830582,Heloniopsis orientalis var. orientalis,1963,4,11,134,Heloniopsis orientalis var. orientalis
+323,93,141.146667,39.469167,1829902183,Heloniopsis orientalis var. orientalis,1963,7,22,225,Heloniopsis orientalis var. orientalis
+324,94,133.544278,35.372861,1829892923,Heloniopsis orientalis var. orientalis,1962,5,17,97,Heloniopsis orientalis var. orientalis
+325,95,138.963806,37.316611,1829901462,Heloniopsis orientalis var. orientalis,1961,5,30,157,Heloniopsis orientalis var. orientalis
+326,96,138.963806,37.316611,1829901499,Heloniopsis orientalis var. orientalis,1961,5,30,157,Heloniopsis orientalis var. orientalis
+327,97,134.764167,34.988333,1829890634,Heloniopsis orientalis var. orientalis,1960,5,15,189,Heloniopsis orientalis var. orientalis
+328,98,139.388146,36.865587,388830566,Heloniopsis orientalis var. orientalis,1960,8,28,180,Heloniopsis orientalis var. orientalis
+329,99,142.985298,43.779923,388830703,Heloniopsis orientalis var. orientalis,1960,8,3,120,Heloniopsis orientalis var. orientalis
+330,100,136.421228,35.001237,1829824191,Heloniopsis orientalis var. orientalis,1959,5,4,140,Heloniopsis orientalis var. orientalis
+331,101,139.910378,39.194088,1829818123,Heloniopsis orientalis var. orientalis,1959,8,2,250,Heloniopsis orientalis var. orientalis
+332,102,137.8625,36.698056,1829899738,Heloniopsis orientalis var. orientalis,1958,6,24,186,Heloniopsis orientalis var. orientalis
+333,103,139.3902,35.5762,1934061691,Heloniopsis orientalis var. orientalis,1956,1,1,39,Heloniopsis orientalis var. orientalis
+334,104,138.456667,35.768889,1829896111,Heloniopsis orientalis var. orientalis,1956,5,27,157,Heloniopsis orientalis var. orientalis
+335,105,142.854204,43.663542,388830587,Heloniopsis orientalis var. orientalis,1956,7,24,85,Heloniopsis orientalis var. orientalis
+336,106,140.002643,37.619764,1829825264,Heloniopsis orientalis var. orientalis,1955,5,2,110,Heloniopsis orientalis var. orientalis
+337,107,138.645315,36.410905,1829823866,Heloniopsis orientalis var. orientalis,1955,6,5,145,Heloniopsis orientalis var. orientalis
+338,108,138.177958,36.100541,1829824351,Heloniopsis orientalis var. orientalis,1953,7,19,173,Heloniopsis orientalis var. orientalis
+339,109,138.157313,35.461261,1829824184,Heloniopsis orientalis var. orientalis,1953,8,3,117,Heloniopsis orientalis var. orientalis
+340,110,139.173198,36.903438,1829824158,Heloniopsis orientalis var. orientalis,1952,7,27,142,Heloniopsis orientalis var. orientalis
+341,111,139.173198,36.903438,1829824175,Heloniopsis orientalis var. orientalis,1951,7,6,142,Heloniopsis orientalis var. orientalis
+342,112,139.203275,36.918628,1829824376,Heloniopsis orientalis var. orientalis,1951,7,4,177,Heloniopsis orientalis var. orientalis
+343,113,139.173198,36.903438,1829825266,Heloniopsis orientalis var. orientalis,1951,7,6,142,Heloniopsis orientalis var. orientalis
+344,114,140.47931,38.24942,1933826886,Heloniopsis orientalis var. orientalis,1946,4,28,56,Heloniopsis orientalis var. orientalis
+345,115,140.15555,35.159,1933873370,Heloniopsis orientalis var. orientalis,1938,5,1,172,Heloniopsis orientalis var. orientalis
+346,116,138.9302,36.8344,1934153508,Heloniopsis orientalis var. orientalis,1936,7,11,160,Heloniopsis orientalis var. orientalis
+347,117,138.9302,36.8344,1934153512,Heloniopsis orientalis var. orientalis,1936,7,11,160,Heloniopsis orientalis var. orientalis
+348,118,137.6295,36.152,1934061698,Heloniopsis orientalis var. orientalis,1935,8,7,203,Heloniopsis orientalis var. orientalis
+349,119,139.0413,35.1277,1934061716,Heloniopsis orientalis var. orientalis,1934,4,24,110,Heloniopsis orientalis var. orientalis
+350,120,139.0413,35.1277,1934061726,Heloniopsis orientalis var. orientalis,1934,4,24,110,Heloniopsis orientalis var. orientalis
+351,121,137.6182,36.5793,1933977001,Heloniopsis orientalis var. orientalis,1915,7,30,105,Heloniopsis orientalis var. orientalis
