@@ -3,12 +3,12 @@ library(ggplot2)
 library(agricolae)
 path <- "E:/忍者/R-work/Git/R-work/GLORIA/GBIF_dataCatch/"
 rdata <- fread(paste0(path,"species_climate.csv"))
-r2 <- rdata[,names(rdata[,6:24]):=lapply(.SD,as.numeric),
+r2 <- rdata[,names(rdata[,5:23]):=lapply(.SD,as.numeric),
             .SDcols=patterns('bio')]
 rloc <- r2[,.(bio_1,bio_12,code,name)][,code:=as.factor(code)]
 ############################### multiple comparison of temp
 aov1 <- aov(bio_1~code,data=rloc)
-tuk <- HSD.test(aov1,"code")
+tuk <- with(rloc,Median.test(bio_1,code))
 order_1 <-tuk$group
 order_1 <- as.data.table(cbind(order_1,rownames(order_1),c(1:length(order_1[,1]))))
 colnames(order_1)[3:4] <-c('code','order')
@@ -25,9 +25,10 @@ ggplot(data=plot_b1,aes(x=as.factor(reorder(code,order)),y=bio_1/10,fill=groups)
   geom_boxplot(outlier.colour=NA)+
   theme_classic()+
   labs(x='Species code',y='AAT (°C)',fill = "group")+
+  theme(legend.position = "none")+
   geom_hline(yintercept=c(5,8,11,17,23), linetype="dashed", color = "gray51")
 
-ggsave(paste0(path,"plot_result/bio_1.jpeg"),width = 12,height = 5,dpi=600)
+ggsave(paste0(path,"plot_result/bio_1_2.jpeg"),width = 12,height = 5,dpi=600)
 ############################### multiple comparison of rainfall
 aov12 <- aov(bio_12~code,data=rloc)
 tuk <- HSD.test(aov12,"code")

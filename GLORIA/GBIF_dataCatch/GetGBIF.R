@@ -37,7 +37,9 @@ for (j in 1:length(nlist[,1])){
   j=1
   tic("total")
     name <- as.character(nlist[j,1])
-  ##### start extract the climate data
+    name <- "Rhododendron morii" 
+  
+    ##### start extract the climate data
   parLapply(cl,name,gbif_and_clim)
 cat(j)
 toc()

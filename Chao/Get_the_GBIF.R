@@ -37,7 +37,7 @@ for (j in 1:length(nlist[,1])){
   tic("total")
   #name <- as.character(nlist[j,1])
   ##### start extract the climate data
-  name <- 'Heloniopsis breviscapa'
+  name <- 'Helonias bullata'
   parLapply(cl,name,gbif_and_clim)
   cat(j)
   toc()
@@ -109,10 +109,24 @@ write.csv(r_mon_spe,paste0(path,'/result_',file_name[i]))
 
 
 ####################plot
-
+library(data.table)
+  library(agricolae)
 plot_data <- fread("E:/忍者/R-work/Git/R-work/Chao/result_and_month_fin.csv")
-
+  aov1 <- aov(temp~name,data=plot_data)
+  tuk <- scheffe.test(aov1,"name")
+  order_1 <-as.data.table(tuk$groups)
+  order_1[,name:=rownames(tuk$groups)]
+  name <-sort(rownames(tuk$groups),decreasing = T)
+  plot_data <- plot_data[order_1,on=.(name=name)]
 library(ggplot2)
-ggplot(data=plot_data,aes(x=temp/10,y=name))+
-  geom_boxplot()
-ggsave('prim_plot.jpeg',width = 10, height = 5,dpi = 600)
+ggplot(data=plot_data,aes(x=temp/10,y=name,fill=groups))+
+  geom_boxplot()+
+  labs(x="Mean monthly temperature (°C)",y="",fill='Group')+
+  scale_fill_brewer(palette="GnBu")+
+  scale_y_discrete(limits=name)+
+  theme(axis.text=element_text(size=12),
+         axis.title=element_text(size=13,face="bold"),
+        legend.text=element_text(size=12),
+        legend.title=element_text(size=13))
+
+ggsave('E:/忍者/R-work/Git/R-work/Chao/prim_plot_c2.jpeg',width = 10, height = 5,dpi = 600)

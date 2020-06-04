@@ -33,16 +33,20 @@ bio <- my_data[[i]]
 bio_tol <- rbind(bio_tol,bio)
 }
 bio_tol <- bio_tol[bio_1!="NA"]
-write.csv(bio_tol,"species_climate.csv")
+bio_tol <- bio_tol[,V1:=NULL]
+bio_tol[,key:=paste0(decimalLongitude,decimalLatitude)]
+setkey(bio_tol,key)
+bio_tol_2 <- unique(bio_tol)
+write.csv(bio_tol_2,"species_climate.csv")
 #############################plot
 ggplot(bio_tol,aes(factor(code),bio_1))+
   geom_boxplot()
 ###########################
-dt <- bio_tol[,.SD,.SDcols=patterns('bio')]
-bio_tol[,names(dt):=lapply(.SD,as.numeric),.SDcols=patterns('bio')]
-dt2 <- bio_tol[,quantile(.(bio_1,bio_12)),by=name]
+dt <- bio_tol_2[,.SD,.SDcols=patterns('bio')]
+bio_tol_2[,names(dt):=lapply(.SD,as.numeric),.SDcols=patterns('bio')]
+dt2 <- bio_tol_2[order(code)][,quantile(bio_12),by=code]
 dt2[,q:=as.factor(rep(1:5,times=73))]
-dt2 <- dcast(dt2,name~q,value.var = 'V1')
+dt2 <- dcast(dt2,code~q,value.var = 'V1')
 colnames(dt2)[2:6] <- paste0("bio12_",colnames(dt2)[2:6])
 write.csv(dt2,"E:/忍者/R-work/Git/R-work/GLORIA/GBIF_dataCatch/bio_12_qun.csv")
 
