@@ -16,11 +16,11 @@ get_wdate <- function(d_path,x,y){ #wheater data path, X=longitude, Y=latitude
   fr[,temp:=as.numeric(temp)]
   return(fr)
   }
-path <- "E:/Climdata/TCCIP/GLORIA_temp_east"
-rpath <- "E:/Climdata/TCCIP/GLORIA_rain_east"
-
-x = 121.00
-y=23.45
+path <- "E:/Climdata/TCCIP/temp_mid"
+rpath <- "E:/Climdata/TCCIP/rain_mid"
+jnj_temp <- get_wdate(path,121.20,24.35)
+ggplot(jnj_temp,aes(x=date,y=temp))+
+  geom_line()
 sen_temp <- get_wdate(path,x,y)
 yatsun_temp <- get_wdate(path,121.05,23.45)
 sen_rain <- get_wdate(rpath,x,y)

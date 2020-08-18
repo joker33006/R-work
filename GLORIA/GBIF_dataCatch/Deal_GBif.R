@@ -45,9 +45,10 @@ ggplot(bio_tol,aes(factor(code),bio_1))+
 bio_tol_2<- fread("E:/忍者/GLORIA_個人處理/2019/2019資料輸入/資料分析/species_climate.csv")
 dt <- bio_tol_2[,.SD,.SDcols=patterns('bio')]
 bio_tol_2[,names(dt):=lapply(.SD,as.numeric),.SDcols=patterns('bio')]
-dt2 <- bio_tol_2[order(code)][,quantile(bio_12),by=code]
+dt2 <- bio_tol_2[order(code)][,quantile(bio_6),by=code]
 dt2[,q:=as.factor(rep(1:5,times=nrow(dt2)/5))]
 dt2 <- dcast(dt2,code~q,value.var = 'V1')
-colnames(dt2)[2:6] <- paste0("bio12_",colnames(dt2)[2:6])
-write.csv(dt2,"E:/忍者/R-work/Git/R-work/GLORIA/GBIF_dataCatch/bio_12_qun.csv")
+colnames(dt2)[2:6] <- paste0("bio6_",colnames(dt2)[2:6])
+write.csv(dt2,"E:/忍者/R-work/Git/R-work/GLORIA/GBIF_dataCatch/bio_6_qun.csv")
+Sys.which(c("ftp", "chorme", "texi2dvi", "this-does-not-exist"))
 
