@@ -4,86 +4,88 @@ library(broom) #get the lm coefficient
 library(ggplot2)
 library(wesanderson)
 library(ggpubr)
-Sys.setlocale("LC_TIME", "English") 
-path <- 'E:/忍者/GLORIA_個人處理/2020/Temp_20200809/'
-rdata <- fread('E:/忍者/GLORIA_個人處理/2020/Temp_20200809/gloria_tw_temp20200809/gloria_tw_temp20200809.csv')
+Sys.setlocale("LC_TIME", "English")
+era_path <- 'E:/忍者/GLORIA_個人處理/paper_準備/weather_ERA5/'
+svpath <- 'E:/忍者/GLORIA_個人處理/paper_準備/data_check'
+rdata <- fread('E:/忍者/GLORIA_個人處理/2020/Temp_20200809/temp_20200809_corrected.csv')
 rdata[,yyddhh:=as.POSIXct(timestamp,format="%Y-%m-%d %H:%M:%S",tz ="" )]
-#####問題資料刪除
-rdata <- rdata[!(id>1873562&id<1873641)] #SYU_DSH_E 20140825-20140828
-rdata <- rdata[!(id>3147609&id<3147623)] #SYU_DSH_N 20140825-20140825
-rdata <- rdata[!(id>3140133&id<3147533)] #SYU_DSH_E 20190215-20191220
-rdata <- rdata[!(id>2496117&id<2504853)] #SYU_JNJ_N 20160104-20160108
-rdata <- rdata[!(id>2573523&id<2573625)] #SYU_JNJ_N 20160104-20160108
-rdata <- rdata[!(id>2593594&id<2594565)] #SYU_JNJ_S 20161121-20161231 
-rdata <- rdata[!(summit=='JNJ'&direction=="S"&year==2017&datalogger=='Hobo UTBI-001 Tidbit v2')]
+rdata <- rdata[!(id %in% c(181782:181783))]
+rdata <- rdata[id!=1031714]
 write.csv(rdata,'E:/忍者/GLORIA_個人處理/2020/Temp_20200809/temp_20200809_corrected.csv')
 ########
 #######初步繪圖，檢查溫度資料
-temp_dir <- function(s){
+temp_dir <- function(s,w_date, svpath){
   Sys.setlocale("LC_TIME", "English") 
   library(data.table)
   library(ggplot2)
+  rdata <- w_date
   prdata <- rdata[summit==s]
   n <- length(unique(prdata[,datalogger]))
   p <- ggplot(prdata,aes(yyddhh,temperature,color=direction))+
     geom_line()+
     facet_grid(datalogger ~ .)
-  ggsave(paste0('E:/忍者/GLORIA_個人處理/2020/Temp_20200809/checking_plot/logger_',s,'.jpeg'),
+  ggsave(paste0(svpath,'/logger_',s,'.jpeg'),
          plot =p,width=20,height=n*3,dpi=300)
   p_d <- ggplot(prdata,aes(yyddhh,temperature,color=direction))+
     geom_line()+
     facet_grid(direction ~ .)
-  ggsave(paste0('E:/忍者/GLORIA_個人處理/2020/Temp_20200809/checking_plot/dir_',s,'.jpeg'),
+  ggsave(paste0(svpath,'/dir_',s,'.jpeg'),
          plot =p_d,width=20,height=n*3,dpi=300)
 }
-summit <- c('DSH','JNJ','TSW')
+summit <- c('SEN','SUN','YAT')
 for(i in 1:3){
-  temp_dir(summit[i])
+  temp_dir(summit[i],rdata,svpath)
 }
 ####################
 ###########review
 library(ggplot2)
 library(scales)
-JNJ <- rdata[summit=='JNJ']
-unique(JNJ[,datalogger])
-ggplot(check2[year==2015&datalogger=="mlog5w"],aes(yyddhh,temperature,color=direction,))+
+YAT<- rdata[summit=='YAT']
+unique(YAT[,datalogger])
+ggplot(YAT[year ==2011&direction=='S'&month==12],aes(yyddhh,temperature,color=direction,))+
   geom_line()+
   facet_grid(direction ~ .)+
   scale_x_datetime(date_labels = '%Y-%m-%d')
-check <- JNJ[yyddhh>as.POSIXct('2015-01-01')&yyddhh<as.POSIXct('2015-12-31')&direction=='S']
-write.csv(check,'E:/忍者/GLORIA_個人處理/2020/Temp_20200809/check.csv')
+check <- YAT[year==2011&month==12&day%in%c(25:27)&direction=='S']
+write.csv(check,paste0(svpath,'/check.csv'))
 ggsave(paste0('E:/忍者/GLORIA_個人處理/2020/Temp_20200809/checking_plot/TSW_test.jpeg'),
-      width=20,height=n*3,dpi=300)
+       width=20,height=n*3,dpi=300)
 #################################
 ######deal the ERA5 weather
 
+a <- fread(paste0(era_path,'DAS/2008_2014_temp_rain.csv'))
+b <- fread(paste0(era_path,'DAS/2015_2019_temp_rain.csv'))
+c <- fread(paste0(era_path,'DAS/2008_2014_maxT_minT.csv'))
+d <- fread(paste0(era_path,'DAS/2015_2019_maxT_minT.csv')) 
+era5_tr <- rbind(a,b)
+era_mnT <- rbind(c,d)
+era5_d <-cbind(era5_tr,era_mnT) 
+era5_d <- era5_d[,-4]
+colnames(era5_d) <- c('date','temp','rain','maxT','minT')
 
-a <- fread(paste0(path,'ERA5_daily_SYU/2008-2014_temp_rain.csv'))
-b <- fread(paste0(path,'ERA5_daily_SYU/2015-2020_temp_rain.csv'))
-era5_d <- rbind(a,b)
-colnames(era5_d) <- c('date','temp','rain')
-era5_d[,date:=as.Date(date,format='%b %d, %Y')][,temp:=temp-273.15][,rain:=rain*1000]
-a <- fread(paste0(path,'ERA5_daily_SYU/2008-2014_temp_maxmin.csv'))
-b <- fread(paste0(path,'ERA5_daily_SYU/2015-2020_temp_maxmin.csv'))
-era5_d_m <- rbind(a,b)
-colnames(era5_d_m) <- c('date','max_t','min_t')
-era5_d_m[,date:=as.Date(date,format='%b %d, %Y')][,max_t:=max_t-273.15][,min_t:=min_t-273.15]
-era5_d <- merge(era5_d,era5_d_m,on=.(date=date))
+era5_d[,date:=as.Date(date,format='%b %d, %Y')][
+  ,temp:=temp-273.15][
+  ,rain:=rain*1000][
+  ,maxT:=maxT-273.15][
+  ,minT:=minT-273.15]
 head(era5_d)
-write.csv(era5_d,'E:/忍者/GLORIA_個人處理/2020/Temp_20200809/temp_REA_5_daily.csv')
+write.csv(era5_d,'E:/忍者/GLORIA_個人處理/2020/Temp_20200809/DAS_ERA5_daily.csv')
 ##############################################
 #############################counting the daily mean
-SYU <- rdata[region=='SYU']
-
-SYU_daily <- SYU[,.(temp=mean(temperature),max_t=max(temperature),
+GLA_temp_d <- function(reg,rdata){
+t_h <- rdata[region==reg]
+daily <- t_h[,.(temp=mean(temperature),max_t=max(temperature),
                     min_t=min(temperature),n=.N),
                  by=.(region,summit,direction,year,month,day,datalogger)]
-SYU_daily[,date:=as.Date(paste(year,month,day,sep='-'))]
-SYU_daily <- SYU_daily[n>23]#刪除未滿24小時的資料
-write.csv(SYU_daily,'E:/忍者/GLORIA_個人處理/2020/Temp_20200809/SYU/daily_temp_data_by_logger.csv')
-SYU_d_com <- SYU_daily[,.(temp=mean(temp),max_t=max(max_t),
-                         min_t=min(min_t),n=.N),
-                    by=.(region,summit,direction,date)]
+daily[,date:=as.Date(paste(year,month,day,sep='-'))]
+daily <- daily[n>23]#刪除未滿24小時的資料
+
+write.csv(daily,'E:/忍者/GLORIA_個人處理/2020/Temp_20200809/SYU/daily_temp_data_by_logger.csv')
+d_com <- daily[,.(temp=mean(temp),max_t=max(max_t),
+                          min_t=min(min_t),n=.N),
+                       by=.(region,summit,direction,date)]
+return(d_com)
+}
 setkey(SYU_d_com,date)
 setkey(era5_d,date)
 syu_era <- SYU_d_com[era5_d]
@@ -97,7 +99,7 @@ w_result <- NULL
 for (i in 1:3){
   rd <- syu_era[summit==S[i]]
   dir <- unique(rd[,direction])
-    for (j in 1:length(unique(dir))){
+  for (j in 1:length(unique(dir))){
     r2 <- rd[direction==dir[j],]
     m_t <- lm(temp~i.temp,data=r2)
     m_maxT <- lm(max_t~i.max_t,data = r2)
@@ -117,7 +119,7 @@ for (i in 1:3){
     pre[,10:14:=NULL]
     pre[,8:=NULL]
     w_result <- rbind(w_result,pre)
-    }
+  }
 }
 write.csv(w_result,'E:/忍者/GLORIA_個人處理/2020/Temp_20200809/SYU/temp_combin_daily.csv')
 write.csv(m_fr,'E:/忍者/GLORIA_個人處理/2020/Temp_20200809/SYU/temp_model_coefficent.csv')
@@ -132,7 +134,7 @@ temp.sm <- NULL
 for (i in 1:3){
   t <- as.data.table(loess(temp~as.numeric(date),data=w_dd[summit==area[i]],span=0.01)$fit)
   temp.sm <- rbind(temp.sm,t)
-  }
+}
 colnames(temp.sm) <- 'temp.sm'
 w_dd[,temp.sm:=NULL]
 w_dd <- cbind(w_dd,temp.sm)
@@ -182,9 +184,9 @@ w.era.m[,date:=as.Date(date,format="%b %d, %Y")]
 w.era.m[,year:=year(date)]
 w.era.m[,month:=month(date)]
 w.era.m[month%in%3:5,season:='Spring'][
-        month%in%6:8,season:='Summer'][
-         month%in%9:11,season:='Fall'][
-         is.na(season),season:='Winter']
+  month%in%6:8,season:='Summer'][
+    month%in%9:11,season:='Fall'][
+      is.na(season),season:='Winter']
 w.era.m[,year.s:=year][month==12,year.s:=year+1]
 w.era_1819 <- w.era.m[year==2018|year==2019,.(pre=sum(rain)),b=.(year,month)]
 w.era_1819[,date:=as.Date(paste(year,month,"1",sep="-"))]
@@ -196,16 +198,16 @@ ggplot(w.era_1819[year==2018],aes(x=date,y=pre*1000))+
   geom_line(y=avg,linetype='dashed',color='gray50')+
   labs(x='Year',y='Precipitation (mm)')+
   theme_classic()#+
-  ggsave(paste0(path,'SYU/plot/rain_year_1979_2019.jpeg'),
-         width=10,height=3,dpi=300)
-  write.csv(era_rain_season,"E:/忍者/GLORIA_個人處理/2020/SYU_EVIandcliment/rain_season.csv")
-  #########plot the season trend
-  
+ggsave(paste0(path,'SYU/plot/rain_year_1979_2019.jpeg'),
+       width=10,height=3,dpi=300)
+write.csv(era_rain_season,"E:/忍者/GLORIA_個人處理/2020/SYU_EVIandcliment/rain_season.csv")
+#########plot the season trend
+
 s <- c('Winter',"Spring",'Summer','Fall')
 ####### temp avg
 
 for (i in 1:4){
-ggplot(w_s[season==s[i]],aes(x=year.s,color=summit))+
+  ggplot(w_s[season==s[i]],aes(x=year.s,color=summit))+
     geom_line(aes(y=temp),size=1)+
     labs(x='Year',y='Mean temperature (°C)')+
     theme_classic2()+
@@ -213,8 +215,8 @@ ggplot(w_s[season==s[i]],aes(x=year.s,color=summit))+
   
   ggsave(paste0(path,'SYU/plot/temp_avg_',s[i],'.jpeg'),
          width=5,height=3,dpi=300)
- 
- }
+  
+}
 ######plot the precipitation
 for (i in 1:4){
   i=4
@@ -231,7 +233,7 @@ for (i in 1:4){
          width=4,height=3,dpi=300)
 }
 ########################################################
-  #########plot
+#########plot
 
 
 ggplot(w_result[summit=='JNJ'&is.na(type)],aes(x=date,y=temp.x,color=direction))+
@@ -240,5 +242,4 @@ ggplot(w_result[summit=='JNJ'&is.na(type)],aes(x=date,y=temp.x,color=direction))
   theme_classic()+
   labs(x="Date",y='Temperature(°C)')+
   xlim(c(as.Date('2012-01-01'),as.Date('2012-12-31')))
-  
 

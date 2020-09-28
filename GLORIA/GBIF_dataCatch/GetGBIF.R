@@ -4,6 +4,7 @@ library(raster)
 library(tictoc) # running time
 library(parallel) #平行運算
 ###### setup the function
+
 gbif_and_clim <- function(name){
   require(data.table)
   require(rgbif)
@@ -25,19 +26,17 @@ gbif_and_clim <- function(name){
     }
   }
   try(result <- cbind(spot[,.(decimalLongitude,decimalLatitude,key)],result))
-  write.csv(result,paste0("E:/忍者/R-work/Git/R-work/GLORIA/GBIF_dataCatch/prim_result/",name,".csv"))
+  write.csv(result,paste0("E:/忍者/GLORIA_個人處理/2020/GBIF/prim_result/",name,".csv"))
 }
 #####################end function
 
-setwd("E:/忍者/R-work/Git/R-work/GLORIA/GBIF_dataCatch")
-svpath <- "E:/忍者/R-work/Git/R-work/GLORIA/GBIF_dataCatch"
-nlist <-read.csv("name_list.txt")
+path <- 'E:/忍者/GLORIA_個人處理/2020/GBIF/'
+svpath <- "E:/GLORIA_個人處理/2020/GBIF/prim_result"
+nlist <-read.csv(paste0(path,"name_list_同物異名.txt"))
 cl <- makeCluster(8)
 for (j in 1:length(nlist[,1])){
-  j=1
   tic("total")
     name <- as.character(nlist[j,1])
-    name <- "Rhododendron morii" 
   
     ##### start extract the climate data
   parLapply(cl,name,gbif_and_clim)

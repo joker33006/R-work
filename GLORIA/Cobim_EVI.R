@@ -40,14 +40,22 @@ ggplot()+
   labs(color = "Summit")+
   theme_classic()
  ggsave(filename = paste0(path,'/plot/SYU_terra_EVI.jpeg'),width = 7,height = 3,dpi = 600)
-
-######################### 算EVI 年均值 備用  
+#########################################################
+######################### 算EVI 年均值and季節值 備用  
 DSH_EVI[,summit:='DSH']
 JNJ_EVI[,summit:='JNJ']
 TSW_EVI[,summit:='TSW'] 
 r.EVI <- rbind(DSH_EVI,JNJ_EVI,TSW_EVI) 
 r.EVI[,year:=year(date)][,month:=month(date)]
+r.EVI[,month:=month(date)]
+r.EVI[month%in%3:5,season:='Spring'][
+  month%in%6:8,season:='Summer'][
+    month%in%9:11,season:='Fall'][
+      is.na(season),season:='Winter']
+r.EVI[,year.s:=year][month==12,year.s:=year+1]
 r.EVI.y <- r.EVI[,.(E.avg=mean(EVI),E.max=max(EVI),E.min=min(EVI)),by=.(year,summit)]
+r.EVI.s <- r.EVI[,.(E.avg=mean(EVI),E.max=max(EVI),E.min=min(EVI)),by=.(year.s,summit,season)]
+write.csv(r.EVI.s,"E:/忍者/GLORIA_個人處理/2020/SYU_EVIandcliment/EVI_season.csv")
 ggplot(r.EVI.y,aes(x=year,y=E.avg,color=summit))+
   geom_line()
   scale_x_date(breaks="year",date_labels="%y")+
@@ -55,6 +63,20 @@ ggplot(r.EVI.y,aes(x=year,y=E.avg,color=summit))+
   ylab("EVI")+
   labs(color = "Summit")+
   theme_classic()
+#####plot season EVI
+s <- c('Winter',"Spring",'Summer','Fall')
+for (i in 1:4){
+    ggplot(r.EVI.s[season==s[i]],aes(x=year.s,y=E.avg,color=summit))+
+    geom_line()+
+    scale_x_continuous(breaks = seq(2003,2020,2))+
+    xlab("Year")+
+    ylab("EVI")+
+    labs(color = "Summit")+
+    theme_classic()
+  
+  ggsave(filename = paste0(path,'/plot/SYU_EVI_season_',s[i],'.jpeg'),
+         width =6,height = 4,dpi = 300)
+  }
 ##########################################################
 ######### time series
 library(imputeTS)
@@ -88,6 +110,7 @@ library(scales)
   labs(x='Year',y='Trend',color = "Summit")+
   theme_classic()
 ggsave(filename = paste0(path,'/plot/SYU_trend_EVI.jpeg'),width = 7,height = 3,dpi = 600)
+
 ggplot()+
   geom_line(data=DSH_ts_r[year(date_w)==2010],aes(date_w,Season,color='DSH'))+
   geom_line(data=JNJ_ts_r[year(date_w)==2010],aes(date_w,Season,color='JNJ'))+
@@ -96,7 +119,7 @@ ggplot()+
   labs(x='Month',y='Seasonal',color = "Summit")+
   theme_classic()
   
-ggsave(filename = paste0(path,'/plot/SYU_season_EVI.jpeg'),width = 5,height = 3,dpi = 600)
+ggsave(filename = paste0(path,'/plot/SYU_season_EVI.jpeg'),width = 6,height = 3,dpi = 600)
 
 ggplot()+
   geom_line(data=DSH_ts_r,aes(date_w,random,color='DSH'))+
