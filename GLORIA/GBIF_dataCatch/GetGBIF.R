@@ -11,7 +11,7 @@ gbif_and_clim <- function(name){
   require(raster)
   require(tictoc)
   result <- NULL
-  data <- as.data.table(occ_search(scientificName = name)$data)
+  data <- as.data.table(occ_search(scientificName = name,limit=3000)$data)
   clim_d_n <- list.files('E:/Climdata/Chelsa_current_2019')
   for (i in 1:length(clim_d_n)){
     rast <- raster(paste0('E:/Climdata/Chelsa_current_2019/',clim_d_n[i]))
@@ -26,13 +26,13 @@ gbif_and_clim <- function(name){
     }
   }
   try(result <- cbind(spot[,.(decimalLongitude,decimalLatitude,key)],result))
-  write.csv(result,paste0("E:/忍者/GLORIA_個人處理/2020/GBIF/prim_result/",name,".csv"))
+  write.csv(result,paste0("E:/忍者/GLORIA_個人處理/GBIF_data/prim_result_total_rd/",name,".csv"))
 }
 #####################end function
 
-path <- 'E:/忍者/GLORIA_個人處理/2020/GBIF/'
-svpath <- "E:/GLORIA_個人處理/2020/GBIF/prim_result"
-nlist <-read.csv(paste0(path,"name_list_同物異名.txt"))
+path <- 'E:/忍者/GLORIA_個人處理/GBIF_data/'
+svpath <- "E:/GLORIA_個人處理/GBIF/prim_result_total_rd"
+nlist <-read.csv(paste0(path,"name_list.txt"))
 cl <- makeCluster(8)
 for (j in 1:length(nlist[,1])){
   tic("total")
@@ -46,5 +46,5 @@ toc()
 stopCluster(cl)
 #deal with the primary data
 
-gbif_and_clim('Carex brachyathera Ohwi')
+gbif_and_clim('Arenaria takasagomontana')
 #################
