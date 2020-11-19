@@ -7,8 +7,6 @@ comb_evi <- function(name,path){
   require(imputeTS)
   require(readr) 
     evi_t <- fread(paste0(path,name,"/Terra_16D.csv"))
-    evi_a <- fread(paste0(path,name,"/Aqua_16D.csv"))
-    #evi <- rbind(evi_a,evi_t)
     evi <- evi_t
     colnames(evi)<-c('time','EVI','AQ')
     evi_sel <- evi[,date:=as.Date(time,format="%b %d, %Y")][
@@ -18,8 +16,9 @@ comb_evi <- function(name,path){
     evi_sel[,EVI.sm:=loess(EVI~as.numeric(date),data=evi_sel,span=0.05)$fit]
     assign(paste0(name,"_EVI"),evi_sel)
     }
-path <- "E:/忍者/GLORIA_個人處理/2020/EVI/SYU/"
-name_list <- c('TSW','JNJ','DSH')
+path <- "E:/忍者/GLORIA_個人處理/EVI/DAS/"
+######deal the EVI of SYU
+name_list <- c('SEN','SUN','YAT')
 for (i in 1:3){
   name <- name_list[i]
   a <- comb_evi(name,path) 

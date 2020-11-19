@@ -46,4 +46,5 @@ toc()
 stopCluster(cl)
 #deal with the primary data
 
-gbif_and_clim(name)
+gbif_and_clim('Carex brachyathera Ohwi')
+#################
