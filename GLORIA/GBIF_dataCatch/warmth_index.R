@@ -5,11 +5,11 @@ library(parallel) #平行運算
 library(ggplot2)
 library(agricolae)
 
-path <- "E:/忍者/R-work/Git/R-work/GLORIA/GBIF_dataCatch/" 
+path <- "E:/忍者/GLORIA_個人處理/GBIF_data/"
 sv_path <- paste0(path,"warmth_index/")
 rast_path <- 'E:/Climdata/Chelsa_1979-2013_monthly/'
-sp_p <- list.files("E:/忍者/R-work/Git/R-work/GLORIA/GBIF_dataCatch/prim_result", pattern='.csv')
-my_data <- lapply(paste0(path,"prim_result/",sp_p),fread)
+sp_p <- list.files(paste0(path,"/prim_result_total_rd"), pattern='.csv')
+my_data <- lapply(paste0(path,"prim_result_total_rd/",sp_p),fread)
 rast_name <- list.files(rast_path)
 fin_r <- NULL
 for (j in 1:length(my_data)){
@@ -58,7 +58,7 @@ ggplot(data=fin_r,aes(x=reorder(code,-i.WI),y=WI,fill=groups))+
   geom_hline(yintercept=c(12,36,72,108,144,216), linetype="dashed", color = "gray51")
 ggsave(paste0(path,"plot_result/bio_WI.jpeg"),width = 12,height = 6,dpi=600)
 ###############calculate the quantile
-q1 <- fin_r[,quantile(WI),by=code]
-q1 <- q1[,q:=rep(1:5,times=nrow(dt2)/5)]
-q1 <- dcast(q1,code~q,value.var = "V1")
+q1 <- fin_r[,quantile(WI),by=.(code,scientificname)]
+q1 <- q1[,q:=rep(1:5,times=nrow(q1)/5)]
+q1 <- dcast(q1,scientificname+code~q,value.var = "V1")
 write.csv(q1,paste0(path,'species_WI_niche.csv'))
