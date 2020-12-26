@@ -2,25 +2,42 @@ library(data.table)
 library(ggplot2)
 library(ggpubr)
 library(scales)
-w_d_das <- fread('E:/忍者/GLORIA_個人處理/Weather_data/DAS/temp_combin_daily.csv')
-w_d_syu <-  fread('E:/忍者/GLORIA_個人處理/Weather_data/SYU/temp_combin_daily.csv')
-w_d <- rbind(w_d_das,w_d_syu)
-w_dd <- w_d[,.(temp=mean(temp.x),max_t=mean(max_t.x),
-               min_t=mean(min_t.x),rain=sum(rain)/4),
+library(tidyverse)
+library(rstatix)#for ANOVA
+w_d <- fread('E:/忍者/GLORIA_個人處理/weather_data/資料填補基本結果/temp_combin_daily.csv')
+w_dd <- w_d[,.(temp=mean(temp)),
             by=.(date,summit,region)]
 w_dd[,year:=year(date)]
 chilling <- w_dd[temp<5,.N,by=.(year,summit,region)]
 chilling[,summit:=factor(summit,levels=c('SEN','TSW','DSH','YAT','JNJ','SUN'))]
+chilling <- chilling[year>2009&year!=2020][
+  year%in%2010:2014,group:='A'][year%in%2015:2019,group:='B']
+chil_mean <-chilling[,.(day=mean(N),day_sd=sd(N)),by=.(summit,region,group)] 
 fwrite(chilling,"E:/忍者/GLORIA_個人處理/Paper_準備/chilling_day_yearly.csv")
-rainbow(6)
-ggplot(chilling[year>2009&year!=2020],aes(x=year,y=N,color=summit))+
-  geom_line(size=1)+
+######nomality and homogeneity test
+chilling[,group_S:=as.factor(paste0(group,"_",summit))]
+chill_test_result <- chilling %>%
+  group_by(group,summit) %>%
+  shapiro_test(N) 
+chill_Homogeneity_result <- chilling %>%
+  levene_test(N~group_S)
+t_tes_r <- chilling%>%group_by(summit)%>%
+  t_test(N~group)%>%as.data.table()
+t_tes_r[p<0.05,sign:='*']
+fwrite(chill_test_result,"E:/忍者/GLORIA_個人處理/Paper_準備/chill_nom_test_result.csv")
+fwrite(chill_Homogeneity_result,"E:/忍者/GLORIA_個人處理/Paper_準備/chill_homo_test_result.csv")
+label.df <- data.table(summit = c('SEN','TSW','DSH','YAT','JNJ','SUN'),
+                       day= c(100,130,120,80,85,60))
+
+ggplot(chil_mean,aes(x=summit,y=day))+
+  geom_bar(aes(fill=group),stat="identity", position=position_dodge(),width = 0.8)+
+  geom_errorbar(aes(fill=group,ymin=day-day_sd, ymax=day+day_sd), position = position_dodge(width = 0.8),width = 0.2)+
   theme_classic2()+
-  scale_x_continuous(breaks = seq(2008,2020,2))+
+  labs(fill = "Period")+
   labs(x='Year',y='Chilling days')+
-  scale_colour_discrete("")
-  #scale_color_manual(values=c('#2D55A6', "#51A4F0", "#F2E641",'#F28F38','#F24738','#912134'))
-ggsave('E:/忍者/GLORIA_個人處理/Paper_準備/plot/present/chilling_day_for_SUYU.jpeg',
-       width=6,height=3,dpi=600)
-ggsave('E:/忍者/GLORIA_個人處理/Paper_準備/plot/chilling_day.jpeg',
-       width=8,height=5,dpi=600)
+  scale_fill_discrete(labels=c('2010-2014','2015-2019'))+
+  #geom_text(data =label.df, label = c('ns','ns','ns','*','*','*'))
+  geom_text(data =label.df, label = c('ns','ns','ns','p=0.006','p=0.038','p=0.013'))
+
+ggsave('E:/忍者/GLORIA_個人處理/Paper_準備/plot/chilling_day_t_test.jpeg',
+       width=6,height=4,dpi=600)

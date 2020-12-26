@@ -2,24 +2,25 @@ library(imputeTS)
 library(data.table)
 library(broom) #get the lm coefficient
 library(ggplot2)
-library(wesanderson)
+library(mondate)
 library(ggpubr)
 Sys.setlocale("LC_TIME", "English")
-era_path <- 'E:/忍者/GLORIA_個人處理/paper_準備/weather_ERA5/'
+era_path <- 'E:/忍者/GLORIA_個人處理/Weather_data/'
 svpath <- 'E:/忍者/GLORIA_個人處理/paper_準備/data_check'
-rdata <- fread('E:/忍者/GLORIA_個人處理/Temp_20200809/temp_20200809_corrected.csv')
-rdata[,yyddhh:=as.POSIXct(timestamp,format="%Y-%m-%d %H:%M:%S",tz ="" )]
-rdata <- rdata[!(id %in% c(181782:181783))]
-rdata <- rdata[id!=1031714]
-write.csv(rdata,'E:/忍者/GLORIA_個人處理/2020/Temp_20200809/temp_20200809_corrected.csv')
+rdata <- fread('E:/忍者/GLORIA_個人處理/Weather_data/temp_20200809_corrected.csv')
+rdata[,yyddhh:=as.POSIXct(timestamp,format="%Y-%m-%d %H:%M:%S",tz ="" )-8*60*60]
+
+rdata[,year:=year(yyddhh)][,month:=month(yyddhh)][,day:=day(yyddhh)][,hour:=hour(yyddhh)]
+
+write.csv(rdata,'E:/忍者/GLORIA_個人處理/Weather_data/temp_20200809_corrected_date.csv')
 ########
 
 ######deal the ERA5 weather
 
-a <- fread(paste0(era_path,'DAS/2008_2014_temp_rain.csv'))
-b <- fread(paste0(era_path,'DAS/2015_2019_temp_rain.csv'))
-c <- fread(paste0(era_path,'DAS/2008_2014_maxT_minT.csv'))
-d <- fread(paste0(era_path,'DAS/2015_2019_maxT_minT.csv')) 
+a <- fread(paste0(era_path,'ERA5_daily_SYU/2008_2014_temp_rain.csv'))
+b <- fread(paste0(era_path,'ERA5_daily_SYU/2015_2020_temp_rain.csv'))
+c <- fread(paste0(era_path,'ERA5_daily_SYU/2008_2014_maxT_minT.csv'))
+d <- fread(paste0(era_path,'ERA5_daily_SYU/2015_2020_maxT_minT.csv')) 
 era5_tr <- rbind(a,b)
 era_mnT <- rbind(c,d)
 era5_d <-cbind(era5_tr,era_mnT) 
@@ -32,7 +33,7 @@ era5_d[,date:=as.Date(date,format='%b %d, %Y')][
   ,max_t:=max_t-273.15][
   ,min_t:=min_t-273.15]
 head(era5_d)
-write.csv(era5_d,'E:/忍者/GLORIA_個人處理/Temp_20200809/DAS_ERA5_daily.csv')
+write.csv(era5_d,'E:/忍者/GLORIA_個人處理/Weather_data/SYU_ERA5_daily.csv')
 ##############################################
 #############################counting the daily mean
 GLA_temp_d <- function(reg,rdata){
@@ -47,11 +48,13 @@ d_com <- daily[,.(temp=mean(temp),max_t=max(max_t),
                        by=.(region,summit,direction,date)]
 return(d_com)
 }
-Das_d <- GLA_temp_d('DAS',rdata)
+reg <- 'SYU'
+era5_d <- fread(paste0(era_path,reg,'_ERA5_daily.csv'))
+Das_d <- GLA_temp_d(reg,rdata)
 setkey(Das_d,date)
 setkey(era5_d,date)
 Das_era <- Das_d[era5_d]
-write.csv(Das_era,'E:/忍者/GLORIA_個人處理/Temp_20200809/DAS/cobim_w_era_data.csv')
+write.csv(Das_era,paste0('E:/忍者/GLORIA_個人處理/Weather_data/',reg,'/cobim_w_era_data.csv'))
 #######################################################
 ############ regression and filling the miss value of temp
 S <- c('SEN','SUN','YAT')
@@ -97,14 +100,11 @@ write.csv(result[2],'E:/忍者/GLORIA_個人處理/Temp_20200809/DAS/temp_combin
 write.csv(result[1],'E:/忍者/GLORIA_個人處理/Temp_20200809/DAS/temp_model_coefficent.csv')
 ############################################################
 ##################### long-term trender of weather 
-w_d_das <- fread('E:/忍者/GLORIA_個人處理/weather_data/DAS/temp_combin_daily.csv')
-w_d_syu <-  fread('E:/忍者/GLORIA_個人處理/weather_data/SYU/temp_combin_daily.csv')
-w_d <- rbind(w_d_das,w_d_syu)
-w_dd <- w_d[,.(temp=mean(temp.x),max_t=mean(max_t.x),
-               min_t=mean(min_t.x),rain=sum(rain)/4),
+w_d <-  fread('E:/忍者/GLORIA_個人處理/weather_data/資料填補基本結果/temp_combin_daily.csv')
+w_dd <- w_d[,.(temp=mean(temp),rain=sum(rain)/4),
             by=.(date,summit,region)]
 
-#area <- c('DSH','JNJ','TSW')
+
 
 area <- c('SEN','SUN','YAT','DSH','JNJ','TSW')
 temp.sm <- NULL
@@ -115,28 +115,24 @@ for (i in 1:length(area)){
 colnames(temp.sm) <- 'temp.sm'
 w_dd[,temp.sm:=NULL]
 w_dd <- cbind(w_dd,temp.sm)
+w_dd[,date:=as.Date(date)]
 w_dd[,year:=year(date)][,month:=month(date)]
 #w_dd <- w_dd[year!=2008]
 w_dd[month%in%3:5,season:='Spring'][month%in%6:8,season:='Summer'][month%in%9:11,season:='Fall'][is.na(season),season:='Winter']
 w_y <- w_dd[,.(temp=mean(temp),temp_sd=sd(temp),
-               max_t=mean(max_t),max_t_sd=sd(max_t),
-               min_t=mean(min_t),min_t_sd=sd(min_t),
                rain=sum(rain)),
             by=.(year,summit,region)] #for year
 w_dd[,year.s:=year]
 w_dd[month==12,year.s:=year+1] # December was the winter group of next year
 
-w_s <- w_dd[,.(temp=mean(temp),max_t=mean(max_t),
-               min_t=mean(min_t),rain=sum(rain)),
+w_s <- w_dd[,.(temp=mean(temp),rain=sum(rain)),
             by=.(year.s,season,summit,region)] #for season
 w_s <- w_s[!year.s==2020]
-w_y <- w_y[!((year==2008|year==2019)&region=='DAS')][
+w_y <- w_y[!((year==2008|year==2020)&region=='DAS')][
           !((year<2010|year==2020)&region=='SYU')] #Excluding the incomplete data
 w_m <-w_dd[,.(temp=mean(temp),temp_sd=sd(temp),
-                  max_t=mean(max_t),max_t_sd=sd(max_t),
-                  min_t=mean(min_t),min_t_sd=sd(min_t),
                   rain=sum(rain)),
                by=.(year,month,summit,region)]
-write.csv(w_s,"E:/忍者/GLORIA_個人處理/Temp_20200809/2008-2020_temp_season.csv")
-write.csv(w_y,"E:/忍者/GLORIA_個人處理/Temp_20200809/2009-2020_temp_year.csv")
-write.csv(w_m,"E:/忍者/GLORIA_個人處理/Temp_20200809/2009-2020_temp_month.csv")
+write.csv(w_s,"E:/忍者/GLORIA_個人處理/Weather_data/2008-2020_temp_season.csv")
+write.csv(w_y,"E:/忍者/GLORIA_個人處理/Weather_data/2009-2020_temp_year.csv")
+write.csv(w_m,"E:/忍者/GLORIA_個人處理/Weather_data/2009-2020_temp_month.csv")

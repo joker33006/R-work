@@ -27,10 +27,41 @@ bio_tol <- bio_tol[,V1:=NULL]
 bio_tol[,key_L:=paste0(decimalLongitude,decimalLatitude)]
 setkey(bio_tol,key_L)
 bio_tol<- unique(bio_tol)
-write.csv(bio_tol,paste0(path,"species_climate.csv"))
+write.csv(bio_tol,paste0(path,"Niche_all_the_raw_data/species_climate.csv"))
 #############################plot
-ggplot(bio_tol,aes(factor(code),bio_1))+
-  geom_boxplot()
+name_list <- fread(paste0(path,'Surveydata_and_niche/name_list.csv'))
+bio_tol <- fread(paste0(path,"Niche_all_the_raw_data/species_climate.csv"))
+bio_tol <- bio_tol[name_list, on =.(code=GBIF_code)]
+bio_tol[,bio_1:=bio_1/10]
+i='bio_12'
+i='bio_1'
+ylabs <- c('AAT(℃)','AP(mm)')
+
+tuk <- with(bio_tol,Median.test(get(i),code,alpha=0.01))
+order <-cbind(tuk$groups,rownames(tuk$groups))
+colnames(order)[3] <- "code"
+order <- as.data.table(order)
+
+setnames(order,"groups",paste0(i,'_groups'))
+order[,code:=as.integer(code)]
+bio_tol <- bio_tol[order,on=.(code=code)]
+
+ggplot(data=bio_tol,aes(x=reorder(Order,-`get(i)`),y=bio_12,fill=bio_12_groups))+
+  geom_boxplot(outlier.colour=NA)+
+  theme_classic()+
+  labs(x="code",y=ylabs[2])+
+#  geom_hline(yintercept=c(5,8,11,14,17,23), linetype="dashed", color = "gray51")
+ geom_hline(yintercept=c(250,500,1000,2000,4000), linetype="dashed", color = "gray51")
+ggsave(paste0(path,"plot/",i,"group.jpeg"),width = 16,height = 6,dpi=600)
+
+ggplot(data=bio_tol,aes(x=reorder(Order,-`get(i)`),y=bio_1,fill=bio_1_groups))+
+  geom_boxplot(outlier.colour=NA)+
+  theme_classic()+
+  labs(x="code",y=ylabs[1])+
+ geom_hline(yintercept=c(5,8,11,14,17,23), linetype="dashed", color = "gray51")
+  #geom_hline(yintercept=c(250,500,1000,2000,4000), linetype="dashed", color = "gray51")
+ggsave(paste0(path,"plot/",i,"group.jpeg"),width = 14,height = 6,dpi=600)
+
 ###########################
 fac <- c(1,6,12)
 result <- NULL

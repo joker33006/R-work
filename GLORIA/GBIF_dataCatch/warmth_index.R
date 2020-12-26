@@ -42,7 +42,8 @@ for (j in 1:length(my_data)){
 }
 write.csv(fin_r,paste0(path,"WI_data_base.csv"))
 ######################################plot and group
-fin_r <- fread(paste0(path,"WI_data_base.csv"))
+fin_r <- fread(paste0(path,"Niche_all_the_raw_data/WI_data_base.csv"))
+name_list <- fread(paste0(path,'Surveydata_and_niche/name_list.csv'))
 tuk <- with(fin_r,Median.test(WI,code))
 order <-cbind(tuk$groups,rownames(tuk$groups))
 colnames(order)[3] <- "code"
@@ -50,13 +51,14 @@ order <- as.data.table(order)
 order[,code:=as.character(code)]
 fin_r[,code:=as.character(code)]
 fin_r <- fin_r[order,on=.(code=code)]
-
-ggplot(data=fin_r,aes(x=reorder(code,-i.WI),y=WI,fill=groups))+
+name_list[,GBIF_code:=as.character(GBIF_code)]
+fin_r <- fin_r[name_list, on =.(code=GBIF_code)]
+ggplot(data=fin_r,aes(x=reorder(Order,-i.WI),y=WI,fill=groups))+
   geom_boxplot(outlier.colour=NA)+
   theme_classic()+
   labs(x="code",y='Warmth Index')+
   geom_hline(yintercept=c(12,36,72,108,144,216), linetype="dashed", color = "gray51")
-ggsave(paste0(path,"plot_result/bio_WI.jpeg"),width = 12,height = 6,dpi=600)
+ggsave(paste0(path,"plot/bio_WI.jpeg"),width = 16,height = 6,dpi=600)
 ###############calculate the quantile
 q1 <- fin_r[,quantile(WI),by=.(code,scientificname)]
 q1 <- q1[,q:=rep(1:5,times=nrow(q1)/5)]
