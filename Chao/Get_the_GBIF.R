@@ -2,7 +2,7 @@ library(rgbif)
 library(data.table)
 library(raster)
 library(tictoc) # running time
-library(parallel) #平行運算
+library(parallel) #�t��
 ###### setup the function
 gbif_and_clim <- function(name){
   library(data.table)
@@ -11,9 +11,9 @@ gbif_and_clim <- function(name){
   library(tictoc)
   result <- NULL
     data <- as.data.table(occ_search(scientificName = name, hasGeospatialIssue=FALSE)$data)
-  clim_d_n <- list.files('E:/Climdata/Chelsa_1979-2013_monthly')
+  clim_d_n <- list.files('D:/Climdata/Chelsa_1979-2013_monthly')
   for (i in 1:length(clim_d_n)){
-    rast <- raster(paste0('E:/Climdata/Chelsa_1979-2013_monthly/',clim_d_n[i]))
+    rast <- raster(paste0('D:/Climdata/Chelsa_1979-2013_monthly/',clim_d_n[i]))
     if (nrow(data)==0|!any(colnames(data)=='decimalLongitude')){name <- paste0('NULL_',name)
     break
     }else{
@@ -25,12 +25,12 @@ gbif_and_clim <- function(name){
     }
   }
   try(result <- cbind(spot,result))
-  write.csv(result,paste0("E:/忍者/R-work/Git/R-work/Chao/prim_result/",name,".csv"))
+  write.csv(result,paste0("D:/GitHub/R-work/Chao/prim_result/",name,".csv"))
 }
 #####################ending function 
 
-setwd("E:/忍者/R-work/Git/R-work/Chao")
-svpath <- "E:/忍者/R-work/Git/R-work/Chao/prim_result"
+setwd("D:/GitHub/R-work/Chao")
+svpath <- "prim_result"
 nlist <-read.csv("name_list.txt")
 cl <- makeCluster(8)
 for (j in 1:length(nlist[,1])){
@@ -46,24 +46,27 @@ stopCluster(cl)
 #deal with the primary data
 
 gbif_and_clim(name)
-###############################
+############################### special process
 result <- NULL
-spot <- fread('Heloniopsis sp..csv')
+clim_d_n <- list.files('D:/Climdata/Chelsa_1979-2013_monthly')
+name <- "Helonias kawanoi"
+spot <- fread(paste0('D:/GitHub/R-work/Chao/point/',name,'.csv'))
 for (i in 1:length(clim_d_n)){
-  rast <- raster(paste0('E:/Climdata/Chelsa_1979-2013_monthly/',clim_d_n[i]))
+    rast <- raster(paste0('D:/Climdata/Chelsa_1979-2013_monthly/',clim_d_n[i]))
 
     dot <- spot[,.(decimalLongitude,decimalLatitude)]
     x <- extract(rast,dot)
     result <-cbind(result,x) 
     colnames(result)[i] <- paste0("mon_",i)
-  }
-write.csv(result,'E:/忍者/R-work/Git/R-work/Chao/prim_result/Heloniopsis sp..csv')
+}
+result <-cbind(dot,result)
+write.csv(result,paste0('D:/GitHub/R-work/Chao/prim_result/',name,'.csv'))
 ###########deal with data
-path <- "E:/忍者/R-work/Git/R-work/Chao"
-svpath <- "E:/忍者/R-work/Git/R-work/Chao/prim_result"
-file_name <- list.files(paste0(path,"/prim_result/"),pattern = '.csv')
-base <- fread('phenology.csv')
-setwd("E:/忍者/R-work/Git/R-work/Chao/prim_result/")
+path <- "D:/GitHub/R-work/Chao/"
+svpath <- "D:/GitHub/R-work/Chao/prim_result"
+file_name <- list.files(paste0(path,"prim_result/"),pattern = '.csv')
+base <- fread('D:/GitHub/R-work/Chao/letter_and_GBIF/phenology.csv')
+setwd("D:/GitHub/R-work/Chao/prim_result/")
 rdata <- lapply(file_name,fread)
 rdata <- lapply(1:length(file_name),function(i){
   rdata[[i]][,name:=sub('.csv','',file_name[i])]
@@ -83,8 +86,9 @@ for(i in 1:length(file_name)){
     }
 cat(i)
 }
+write.csv(result_mon,"D:/GitHub/R-work/Chao/result_V2.csv")
 ##############################deal with the specimen
-setwd("E:/忍者/R-work/Git/R-work/Chao/prim_result/")
+setwd("D:/GitHub/R-work/Chao/prim_result/")
 rdata <- lapply(file_name,fread)
 rdata <- lapply(1:length(file_name),function(i){
   rdata[[i]][,name:=sub('.csv','',file_name[i])]
@@ -111,9 +115,11 @@ write.csv(r_mon_spe,paste0(path,'/result_',file_name[i]))
 ####################plot
 library(data.table)
   library(agricolae)
-plot_data <- fread("E:/忍者/R-work/Git/R-work/Chao/result_and_month_fin.csv")
+plot_data <- fread("D:/GitHub/R-work/Chao/result_and_month_fin.csv")
   aov1 <- aov(temp~name,data=plot_data)
   tuk <- scheffe.test(aov1,"name")
+  aov_result <- summary.aov(aov1)
+write(aov_result,"D:/GitHub/R-work/Chao/result_aov.csv")  
   order_1 <-as.data.table(tuk$groups)
   order_1[,name:=rownames(tuk$groups)]
   name <-sort(rownames(tuk$groups),decreasing = T)
@@ -121,7 +127,7 @@ plot_data <- fread("E:/忍者/R-work/Git/R-work/Chao/result_and_month_fin.csv")
 library(ggplot2)
 ggplot(data=plot_data,aes(x=temp/10,y=name,fill=groups))+
   geom_boxplot()+
-  labs(x="Mean monthly temperature (°C)",y="",fill='Group')+
+  labs(x="Mean monthly temperature (�XC�|)",y="",fill='Group')+
   scale_fill_brewer(palette="GnBu")+
   scale_y_discrete(limits=name)+
   theme(axis.text=element_text(size=12),
@@ -129,4 +135,4 @@ ggplot(data=plot_data,aes(x=temp/10,y=name,fill=groups))+
         legend.text=element_text(size=12),
         legend.title=element_text(size=13))
 
-ggsave('E:/忍者/R-work/Git/R-work/Chao/prim_plot_c2.jpeg',width = 10, height = 5,dpi = 600)
+ggsave('D:/GitHub/R-work/Chao/prim_plot_c2.jpeg',width = 10, height = 5,dpi = 600)
