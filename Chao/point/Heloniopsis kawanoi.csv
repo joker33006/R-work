@@ -1,30 +1,42 @@
 ,reference,code,decimalLatitude,decimalLongitude,note
-,"Tanaka, 2019, RYU-25059",RYU-25059,28.2884764184446,129.315755491286,Yuwandake 
-,"Tanaka, 2019, TNS-60738 ",TNS-60738 ,24.7693488085408,125.324170378654,Miyako Isl. 
-,"Tanaka, 2019, L-1455529*, TI","L-1455529*, TI",26.7138428692411,128.268920235227,Tanaga-Gumui 
-,"Tanaka, 2019, MAK-141694, RYU-17010 ","MAK-141694, RYU-17010 ",24.3360741984004,123.817149942696,Iriomote Isl. 
-,"Tanaka, 2019, TNS-60736, -60737 ","TNS-60736, -60737 ",24.3247422919472,123.78257605026,near Nakaragawa Riv. 
-,"Tanaka, 2019, TI, RYU-27147 ","TI, RYU-27147 ",24.316396472311,123.819405675847,Gozadake
-,"Tanaka, 2019, MAK-138905",MAK-138905,24.4281165093356,124.183457669982,Omoto-dake 
-1,http://science-net.kahaku.go.jp/specimen/4778139,,"24.398191412902186, 123.80015251941806",,"Yaeyama-gun, Taketomi-cho "
-2,http://science-net.kahaku.go.jp/specimen/4778141,,"24.320263963938327, 123.82735973930016",,"Yaeyama-gun, Taketomi-cho "
-3,http://science-net.kahaku.go.jp/specimen/4839486,,"24.399979036408794, 123.79894767837554",,"Yaeyama-gun, Taketomi-cho "
-4,http://science-net.kahaku.go.jp/specimen/4839501,,"24.4094818899284, 124.17921395379476",,Ishigaki-shi 
-5,http://science-net.kahaku.go.jp/specimen/4839866,,"24.4094818899284, 124.17921395379476",,Ishigaki-shi 
-6,http://science-net.kahaku.go.jp/specimen/4840548 ,,"24.299876241195516, 123.80139487586351",,"Yaeyama-gun, Taketomi-cho "
-7,http://science-net.kahaku.go.jp/specimen/4840762 ,,"24.320263963938327, 123.82735973930016",,"Yaeyama-gun, Taketomi-cho "
-8,http://science-net.kahaku.go.jp/specimen/4840975 ,,"24.4094818899284, 124.17921395379476",,Ishigaki-shi 
-9,http://science-net.kahaku.go.jp/specimen/4841153 ,,"24.302406486224562, 123.69442572537038",,Ishigaki-shi 
-10,http://science-net.kahaku.go.jp/specimen/4926379 ,,"26.700093262184804, 128.1997640877489",,"Kunigami-gun, Kunigami-son "
-11,http://science-net.kahaku.go.jp/specimen/4840703 ,,"24.300426350858583, 123.80047368853688",,"Yaeyama-gun, Taketomi-cho "
-12, http://science-net.kahaku.go.jp/specimen/4841027 ,,"24.300968931552486, 123.80000257118944",,"Yaeyama-gun, Taketomi-cho "
-13,http://science-net.kahaku.go.jp/specimen/4841311 ,,"24.29805495924638, 123.6999240459182",,"Yaeyama-gun, Taketomi-cho "
-14,http://science-net.kahaku.go.jp/specimen/4841373 ,,"27.838026806162986, 128.92617526938085",,Oshima-gun Tokunoshima-cho 
-15,http://science-net.kahaku.go.jp/specimen/4841378 ,,"26.70009137791847, 128.20024454209587",,
-16,http://science-net.kahaku.go.jp/specimen/4839843 ,,"24.400590970147977, 123.80299898383608",,
-17,http://science-net.kahaku.go.jp/specimen/4840784 ,,"24.30084195318021, 123.80003359668994",,
-,http://science-net.kahaku.go.jp/specimen/4841372 ,,"27.838026806162986, 128.92617526938085",,Oshima-gun Tokunoshima-cho 
-,http://science-net.kahaku.go.jp/specimen/4840728 ,,"28.30039086570458, 129.30147760532347",,
-,http://science-net.kahaku.go.jp/specimen/4840763 ,,"24.40047446430329, 123.80068737904955",,
-,http://science-net.kahaku.go.jp/specimen/4840785 ,,"24.300442324257276, 123.80026602140985",,
-,http://science-net.kahaku.go.jp/specimen/4841374 ,,"27.838026806162986, 128.92617526938085",,Oshima-gun Tokunoshima-cho 
+1,"Tanaka, 2019, RYU-25059",RYU-25059,28.28847642,129.3157555,Yuwandake 
+2,"Tanaka, 2019, TNS-60738 ",TNS-60738 ,24.76934881,125.3241704,Miyako Isl. 
+3,"Tanaka, 2019, L-1455529*, TI","L-1455529*, TI",26.71384287,128.2689202,Tanaga-Gumui 
+4,"Tanaka, 2019, MAK-141694, RYU-17010 ","MAK-141694, RYU-17010 ",24.3360742,123.8171499,Iriomote Isl. 
+5,"Tanaka, 2019, TNS-60736, -60737 ","TNS-60736, -60737 ",24.32474229,123.7825761,near Nakaragawa Riv. 
+6,"Tanaka, 2019, TI, RYU-27147 ","TI, RYU-27147 ",24.31639647,123.8194057,Gozadake
+7,"Tanaka, 2019, MAK-138905",MAK-138905,24.42811651,124.1834577,Omoto-dake 
+8,http://science-net.kahaku.go.jp/specimen/4778139,,24.39819141,123.8001525,"Yaeyama-gun, Taketomi-cho "
+9,http://science-net.kahaku.go.jp/specimen/4778141,,24.32026396,123.8273597,"Yaeyama-gun, Taketomi-cho "
+10,http://science-net.kahaku.go.jp/specimen/4839486,,24.39997904,123.7989477,"Yaeyama-gun, Taketomi-cho "
+11,http://science-net.kahaku.go.jp/specimen/4839501,,24.40948189,124.179214,Ishigaki-shi 
+12,http://science-net.kahaku.go.jp/specimen/4839866,,24.40948189,124.179214,Ishigaki-shi 
+13,http://science-net.kahaku.go.jp/specimen/4840548 ,,24.29987624,123.8013949,"Yaeyama-gun, Taketomi-cho "
+14,http://science-net.kahaku.go.jp/specimen/4840762 ,,24.32026396,123.8273597,"Yaeyama-gun, Taketomi-cho "
+15,http://science-net.kahaku.go.jp/specimen/4840975 ,,24.40948189,124.179214,Ishigaki-shi 
+16,http://science-net.kahaku.go.jp/specimen/4841153 ,,24.30240649,123.6944257,Ishigaki-shi 
+17,http://science-net.kahaku.go.jp/specimen/4926379 ,,26.70009326,128.1997641,"Kunigami-gun, Kunigami-son "
+18,http://science-net.kahaku.go.jp/specimen/4840703 ,,24.30042635,123.8004737,"Yaeyama-gun, Taketomi-cho "
+19,http://science-net.kahaku.go.jp/specimen/4841027 ,,24.30096893,123.8000026,"Yaeyama-gun, Taketomi-cho "
+20,http://science-net.kahaku.go.jp/specimen/4841311 ,,24.29805496,123.699924,"Yaeyama-gun, Taketomi-cho "
+21,http://science-net.kahaku.go.jp/specimen/4841373 ,,27.83802681,128.9261753,Oshima-gun Tokunoshima-cho 
+22,http://science-net.kahaku.go.jp/specimen/4841378 ,,26.70009138,128.2002445,
+23,http://science-net.kahaku.go.jp/specimen/4839843 ,,24.40059097,123.802999,
+24,http://science-net.kahaku.go.jp/specimen/4840784 ,,24.30084195,123.8000336,
+25,http://science-net.kahaku.go.jp/specimen/4841372 ,,27.83802681,128.9261753,Oshima-gun Tokunoshima-cho 
+26,http://science-net.kahaku.go.jp/specimen/4840728 ,,28.30039087,129.3014776,
+27,http://science-net.kahaku.go.jp/specimen/4840763 ,,24.40047446,123.8006874,
+28,http://science-net.kahaku.go.jp/specimen/4840785 ,,24.30044232,123.800266,
+29,http://science-net.kahaku.go.jp/specimen/4841374 ,,27.83802681,128.9261753,Oshima-gun Tokunoshima-cho 
+30,http://science-net.kahaku.go.jp/specimen/4840543,,28.30086638,129.3005231,Oshima-gun Uken-son
+31,http://science-net.kahaku.go.jp/specimen/4840976,,24.40858805,124.1738019,Ishigaki-shi
+32,http://science-net.kahaku.go.jp/specimen/4840998,,24.4,123.8,Yaeyama-gun Taketomi-cho
+33,http://science-net.kahaku.go.jp/specimen/4841161,,24.3,123.7,Yaeyama-gun Taketomi-cho
+34,http://science-net.kahaku.go.jp/specimen/4799908,,26.7,128.3,Kunigami-gun Kunigami-son
+35,http://science-net.kahaku.go.jp/specimen/4839844,,24.56926069,124.3105551,Ishigaki-shi
+36,http://science-net.kahaku.go.jp/specimen/4840728,,28.3,129.3,Oshima-gun Uken-son
+37,http://science-net.kahaku.go.jp/specimen/4840763,,24.4,123.8,Yaeyama-gun Taketomi-cho
+38,http://science-net.kahaku.go.jp/specimen/4840785,,24.3,128.8,Yaeyama-gun Taketomi-cho
+39,?http://science-net.kahaku.go.jp/specimen/4840786,,24.3,128.8,Yaeyama-gun Taketomi-cho
+40,http://science-net.kahaku.go.jp/specimen/4841374,,27.80909401,128.9464688,Oshima-gun Tokunoshima-cho
+41,http://science-net.kahaku.go.jp/specimen/4841375,,27.80909401,128.9464688,Oshima-gun Tokunoshima-cho
