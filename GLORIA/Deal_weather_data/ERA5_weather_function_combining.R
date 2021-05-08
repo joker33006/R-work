@@ -58,8 +58,7 @@ write.csv(Das_era,paste0('E:/忍者/GLORIA_個人處理/Weather_data/',reg,'/cob
 #######################################################
 ############ regression and filling the miss value of temp
 S <- c('SEN','SUN','YAT')
-reg <- "DAS" #test
-wdata <- Das_era #test
+
 #the wdata is the Das_era, 
 #inculding the datalogger daily avg., max, and min temp. 
 #Also, combining the ERA5 daily temp.
@@ -99,7 +98,7 @@ result <- lm_era_real(reg,Das_era,era5_d,S)
 write.csv(result[2],'E:/忍者/GLORIA_個人處理/Temp_20200809/DAS/temp_combin_daily.csv')
 write.csv(result[1],'E:/忍者/GLORIA_個人處理/Temp_20200809/DAS/temp_model_coefficent.csv')
 ############################################################
-##################### long-term trender of weather 
+##################### long-term trend of weather 
 w_d <-  fread('E:/忍者/GLORIA_個人處理/weather_data/資料填補基本結果/temp_combin_daily.csv')
 w_dd <- w_d[,.(temp=mean(temp),rain=sum(rain)/4),
             by=.(date,summit,region)]
