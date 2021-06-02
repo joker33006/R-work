@@ -1,5 +1,17 @@
-reference,code,decimalLatitude,decimalLongitude,note,
-"Tanaka, 2019",TNS-129705,26.6678779142598,128.162684443047,"Kunigami-gun, Ôgimi-son","Tanaka, 2019, TNS-129705"
-"Tanaka, 2019","RYU-41828; TNS-116547, 116548).",26.6161704254496,128.043330792138," Makiya-ku(真喜屋), Haneji-son(羽地村)","Tanaka, 2019, RYU-41828; TNS-116547, 116548)."
-"Tanaka, 2019",TI,24.3632366775172,123.795973810406,Iriomote Isl.: Urauchi Riv.,"Tanaka, 2019, TI"
-"Tanaka, 2019",RYU-19301,24.4072925135129,124.17559257738,Ishigaki,"Tanaka, 2019, RYU-19301"
+reference,decimalLatitude,decimalLongitude,note
+"Tanaka, 2019, TNS-129705",26.66787791,128.1626844,"Kunigami-gun, ?gimi-son"
+"Tanaka, 2019, RYU-41828; TNS-116547, 116548).",26.61617043,128.0433308," Makiya-ku(?��?�?, Haneji-son(羽地??"
+"Tanaka, 2019, TI",24.36323668,123.7959738,Iriomote Isl.: Urauchi Riv.
+"Tanaka, 2019, RYU-19301",24.40729251,124.1755926,Ishigaki
+http://science-net.kahaku.go.jp/specimen/4839570,24.52171178,124.2885618,Ishigaki-shi
+http://science-net.kahaku.go.jp/specimen/4840977,26.68639583,128.2045844,Kunigami-gun Ogimi-son
+http://science-net.kahaku.go.jp/specimen/4840999,24.41173318,123.7702376,Yaeyama-gun Taketomi-cho
+http://science-net.kahaku.go.jp/specimen/4840701,26.73694768,128.3038973,Yaeyama-gun Taketomi-cho
+http://science-net.kahaku.go.jp/specimen/4840880,26.74502894,128.3020797,Kunigami-gun Kunigami-son
+http://science-net.kahaku.go.jp/specimen/4799787,26.7,128.2,Kunigami-gun Ogimi-son
+http://science-net.kahaku.go.jp/specimen/4839854,24.52435624,124.2905336,Ishigaki-shi
+http://science-net.kahaku.go.jp/specimen/4840431,24.52435624,124.2905336,Ishigaki-shi
+?http://science-net.kahaku.go.jp/specimen/4840702,24.40327442,123.7621092,Yaeyama-gun Taketomi-cho
+http://science-net.kahaku.go.jp/specimen/4926380,26.7,128.2,Kunigami-gun Higashi-son
+http://science-net.kahaku.go.jp/specimen/4799785,26.6,128.1,Kunigami-gun Haneji-son
+http://science-net.kahaku.go.jp/specimen/4926382,26.7,128.2,Kunigami-gun Higashi-son
