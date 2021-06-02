@@ -16,10 +16,10 @@ comb_evi <- function(name,path){
     evi_sel[,EVI.sm:=loess(EVI~as.numeric(date),data=evi_sel,span=0.05)$fit]
     assign(paste0(name,"_EVI"),evi_sel)
     }
-path <- "E:/忍者/GLORIA_個人處理/EVI/DAS/"
+path <- "C:/Users/joker/Google 雲端硬碟/GLORIA_個人處理/EVI/total/"
 ######deal the EVI of SYU
-name_list <- c('SEN','SUN','YAT')
-for (i in 1:3){
+name_list <- c('SEN','SUN','YAT','DSH',"JNJ","TSW")
+for (i in 1:length(name_list)){
   name <- name_list[i]
   a <- comb_evi(name,path) 
   write.csv(a,paste0(path,'result/',name,'_EVI.csv'))
